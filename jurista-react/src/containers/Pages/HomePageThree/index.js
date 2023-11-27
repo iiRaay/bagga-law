@@ -31,25 +31,23 @@ const aboutText = [
     { text: 'and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum' },
 ]
 
-const heroSliders = [
-    {
+const heroSliders = [{
         images: 'slideWrapperOne',
         title: 'We Fight For Your Justice',
         subTitle: 'As Like A Friend.',
-        text: 'The Most Talented Law Frim',
+        text: 'The Most Talented Law Firm',
         button: 'Contact us now'
     },
     {
         images: 'slideWrapperTwo',
         title: 'We Fight For Your Justice',
         subTitle: 'As Like A Friend.',
-        text: 'The Most Talented Law Frim',
+        text: 'The Most Talented Law Firm',
         button: 'Contact us now'
     },
 ]
 
-const services = [
-    {
+const services = [{
         icon: 'flaticon-parents',
         title: 'Family Law',
         content: 'There are many variations of passages of Lorem '

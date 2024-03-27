@@ -12,7 +12,7 @@ const CounterArea = ({ className, fullWidth }) => {
         <div className={className}>
             <div className="container">
                 <div className="row">
-                    <div className={fullWidth ? "col-12" : "col-lg-6 col-12"}>
+                    <div className={fullWidth ? "col-12" : "col-lg-12 col-12"}>
                         <div className="counterMainWrapper">
                             {counters.map((count, i) => (
                                 <div key={i} className="counterWrap">

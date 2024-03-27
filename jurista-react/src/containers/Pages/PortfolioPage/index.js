@@ -57,9 +57,7 @@ const PortfolioPage = () => {
                 className="portfolioArea portfolioAreaStyleTwo"
             />
 
-            <NewsLetter
-                className="newsLetterArea"
-            />
+
             <FooterArea />
         </Fragment>
     )

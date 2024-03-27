@@ -1,15 +1,17 @@
-.teamArea{
+.teamArea {
     padding: 100px 0px;
-    .teamWrapper{
+
+    .teamWrapper {
         overflow: hidden;
         box-shadow: 1px 1px 5px rgba(0, 0, 5, .08);
         position: relative;
-        
-        .teamImage{
+
+        .teamImage {
             border: 1px solid #fff;
             border-bottom: none;
         }
-        .teamContent{
+
+        .teamContent {
             position: relative;
             margin-top: -40px;
             background: #f5f5f5;
@@ -17,32 +19,39 @@
             transition: all .3s;
             text-align: center;
             border: 1px solid #f5f5f5;
-            h3{
+
+            h3 {
                 padding: 30px 0 5px;
                 font-size: 24px;
             }
-            span{
+
+            span {
                 color: #ada282;
             }
-            ul{
+
+            ul {
                 display: flex;
                 justify-content: center;
                 margin: 20px 0;
-                li{
+
+                li {
                     padding: 0 10px;
-                    a{
+
+                    a {
                         color: #c0b596;
                     }
                 }
             }
         }
-        &:hover{
-            .teamContent{
+
+        &:hover {
+            .teamContent {
                 transform: translateY(0px);
                 background: #fff;
             }
         }
     }
+
     .slick-prev,
     .slick-next {
         width: 50px;
@@ -52,28 +61,36 @@
         border-radius: 5px;
         z-index: 10;
         cursor: pointer;
+
         @media (max-width:375px) {
             height: 35px;
             width: 35px;
         }
+
         @media (max-width:1200px) {
             background: rgba(192, 181, 150, .9);
         }
-        &:hover{
+
+        &:hover {
             background: rgba(192, 181, 150, .8);
-            &::before{
+
+            &::before {
                 color: #333;
             }
         }
     }
+
     .slick-prev {
         left: -70px;
+
         @media (max-width:1200px) {
             left: -30px;
         }
+
         @media (max-width:600px) {
             left: -10px;
         }
+
         &::before {
             font-family: "FontAwesome";
             content: "\f104";
@@ -81,14 +98,18 @@
             color: #333;
         }
     }
+
     .slick-next {
         right: -70px;
+
         @media (max-width:1200px) {
             right: -30px;
         }
+
         @media (max-width:600px) {
             right: -10px;
         }
+
         &::before {
             font-family: "FontAwesome";
             content: "\f105";

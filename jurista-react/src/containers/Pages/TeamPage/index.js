@@ -6,8 +6,8 @@ import TeamMember from '../../../components/TeamMember'
 import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
 // images
-import breadcumb from '../../../images/breadcumb/1.jpg'
-
+// import breadcumb from '../../../images/breadcumb/1.jpg'
+import groupBanner from '../../../images/Attorneys-single/group.jpg'
 import './style.scss'
 
 const breadcumbMenu = [
@@ -26,7 +26,7 @@ const TeamPage = () => {
                 className="breadcumbArea"
                 title="Our Attorneys"
                 breadcumbMenu={breadcumbMenu}
-                background={breadcumb}
+                background={groupBanner}
             />
             <TeamMember
                 title="Qualified Attorneys "
@@ -34,9 +34,7 @@ const TeamPage = () => {
                 className="teamArea teamAreaStyleTwo"
                 noGutters={true}
             />
-            <NewsLetter
-                className="newsLetterArea"
-            />
+
             <FooterArea />
         </Fragment>
     )

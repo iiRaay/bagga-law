@@ -2,9 +2,9 @@ import React from 'react'
 import './style.scss'
 
 const services = [
-    { icon: 'fi flaticon-lawyer', subtitle: 'Book Your', title: 'Appointment' },
-    { icon: 'fi flaticon-scale', subtitle: 'Get Free', title: 'Expert Advice' },
-    { icon: 'fi flaticon-network', subtitle: 'You Can Easily', title: 'Join Our Team' },
+    { icon: 'fi flaticon-lawyer', subtitle: 'Free', title: 'Consultation' },
+    { icon: 'fi flaticon-scale', subtitle: 'The', title: 'Experts' },
+    { icon: 'fi flaticon-network', subtitle: 'Client', title: 'Reviews' },
 ]
 const Service = props => {
     return (

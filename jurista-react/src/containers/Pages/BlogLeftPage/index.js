@@ -53,9 +53,6 @@ const BlogLeftPage = () => {
                     </div>
                 </div>
             </div>
-            <NewsLetter
-                className="newsLetterArea"
-            />
             <FooterArea />
         </Fragment>
     )

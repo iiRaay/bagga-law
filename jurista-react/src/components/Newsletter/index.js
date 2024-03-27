@@ -12,7 +12,7 @@ const NewsLetter = ({ className }) => {
                 <div className="row">
                     <div className="col-12">
                         <div className="newsletterWrap">
-                            <h3>Subscribe  Newsletter</h3>
+                            <h3>Subscribe Newsletter</h3>
                             <form onSubmit={submitHandler} className="newsletterForm">
                                 <input
                                     type="email"

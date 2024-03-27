@@ -1,13 +1,17 @@
-.counterArea{
+.counterArea {
     padding: 100px 0px;
-    background: url(../../images/counter/1.jpg)  center center/cover no-repeat local;
-    .counterMainWrapper{
+    background: url(../../images/counter/1.jpg) center center/cover no-repeat local;
+
+    .counterMainWrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        .counterWrap{
-            flex: 0 0 49.5%;
-            width: 49.5%;
+
+        .counterWrap {
+            flex: 0 0 24%;
+            /* Adjust the width as needed */
+            width: 24%;
+            /* Adjust the width as needed */
             background: rgba(192, 181, 150, .2);
             margin-bottom: 5px;
             min-height: 170px;
@@ -15,38 +19,45 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            .count{
+
+            .count {
                 font-size: 50px;
                 font-weight: bold;
                 color: #fff;
                 margin: 0;
                 line-height: 10px;
                 font-family: 'Playfair Display', serif;
+
                 @media (max-width:375px) {
                     font-size: 30px;
                 }
-                span{
-                    &.level{
+
+                span {
+                    &.level {
                         font-weight: 300;
                     }
                 }
             }
-            p{
+
+            p {
                 font-size: 18px;
                 font-weight: normal;
                 color: #c0b596;
                 margin-bottom: 0;
+
                 @media (max-width:375px) {
                     font-size: 15px;
                 }
             }
         }
     }
-    &.counterAreaStyleTwo{
+
+    &.counterAreaStyleTwo {
         background: url(../../images/counter/2.jpg) center center/cover no-repeat local;
         background-attachment: fixed;
         position: relative;
-        &::before{
+
+        &::before {
             content: "";
             background-color: rgba(21, 26, 48, 0.9);
             width: 100%;
@@ -55,14 +66,17 @@
             left: 0;
             top: 0;
         }
-        .counterMainWrapper{
-            .counterWrap{
+
+        .counterMainWrapper {
+            .counterWrap {
                 flex: 0 0 24.5%;
                 width: 24.5%;
+
                 @media (max-width:768px) {
                     width: 49.5%;
                     flex: 0 0 49.5%;
                 }
+
                 @media (max-width:450px) {
                     width: 100%;
                     flex: 0 0 100%;

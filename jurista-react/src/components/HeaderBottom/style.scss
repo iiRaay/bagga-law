@@ -1,46 +1,60 @@
-.headerArea{
-    .headerBottomArea{
+.headerArea {
+    .headerBottomArea {
         background: #272c3f;
         position: relative;
         display: flex;
         align-items: center;
+
         .logo {
             padding: 10px 0px;
+            max-width: 90%;
+            max-height: 90%;
+
             @media (max-width:800px) {
                 padding: 15px 0;
                 margin-top: 0;
             }
-            img{
+
+            img {
                 @media (max-width:1024px) {
                     height: unset;
                 }
+
                 @media (max-width:768px) {
                     height: 50px;
                 }
+
                 @media (max-width:767px) {
                     height: 40px;
                 }
+
                 @media (max-width:400px) {
                     height: unset;
                 }
             }
         }
-        .mainMenuWrap{
+
+        .mainMenuWrap {
             text-align: right;
-            li{
+
+            li {
                 display: inline-block;
                 position: relative;
                 padding: 0px 18px;
-                &:first-child{
+
+                &:first-child {
                     padding-left: 0;
                 }
-                &:last-child{
+
+                &:last-child {
                     padding-right: 0;
                 }
+
                 @media (max-width:1200px) {
                     padding: 0px 15px;
                 }
-                a{
+
+                a {
                     display: block;
                     font-size: 15px;
                     font-weight: 400;
@@ -49,24 +63,29 @@
                     padding: 35px 0px;
                     text-transform: uppercase;
                     cursor: pointer;
-                    i{
+
+                    i {
                         display: none;
                     }
+
                     @media (max-width:1200px) {
                         font-size: 14px;
                     }
-                    &.active{
+
+                    &.active {
                         color: #c0b596;
                     }
                 }
-                
-                &:hover{
+
+                &:hover {
+
                     a,
-                    span{
+                    span {
                         color: #c0b596;
                     }
                 }
-                ul.subMenu{
+
+                ul.subMenu {
                     position: absolute;
                     left: 0;
                     top: 92px;
@@ -85,29 +104,34 @@
                     -o-transition: all 0.3s ease 0s;
                     transition: all 0.3s ease 0s;
                     text-transform: capitalize;
-                    li{
+
+                    li {
                         display: block;
                         padding: 0;
                         border-bottom: 1px solid #f2f2f2;
-                        &:last-child{
+
+                        &:last-child {
                             border-bottom: none;
 
                         }
-                        a{
+
+                        a {
                             font-size: 1rem;
                             color: #06163a;
                             display: block;
                             padding: 12px 15px;
                             text-transform: capitalize;
+
                             &:hover,
-                            &.active{
+                            &.active {
                                 color: #c0b596;
                             }
                         }
                     }
                 }
-                &:hover{
-                    ul.subMenu{
+
+                &:hover {
+                    ul.subMenu {
                         -webkit-transform: scaleY(1);
                         -ms-transform: scaleY(1);
                         -o-transform: scaleY(1);
@@ -116,7 +140,8 @@
                 }
             }
         }
-        .responsiveWrapper{
+
+        .responsiveWrapper {
             @media (max-width:800px) {
                 display: none;
                 position: absolute;
@@ -127,20 +152,25 @@
                 transition: all .3s;
                 z-index: 99;
                 padding: 20px;
-                &.active{
+
+                &.active {
                     display: block;
                 }
-                .mainMenuWrap{
+
+                .mainMenuWrap {
                     text-align: left;
-                    li{
+
+                    li {
                         display: block;
                         padding: 0;
                         margin-bottom: 15px;
+
                         a,
-                        span{
+                        span {
                             padding: 0px;
                             position: relative;
-                            i{
+
+                            i {
                                 display: block;
                                 position: absolute;
                                 right: 0;
@@ -148,11 +178,14 @@
                                 transform: translateY(-50%);
                             }
                         }
-                        ul.subMenu{
+
+                        ul.subMenu {
                             top: 25px;
-                            li{
+
+                            li {
                                 margin-bottom: 0;
-                                a{
+
+                                a {
                                     padding: 10px 0px;
                                 }
                             }
@@ -161,25 +194,40 @@
                 }
             }
         }
-        .searchMenuWrapper{
+
+        .searchMenuWrapper {
             display: flex;
             justify-content: flex-end;
             height: 100%;
             align-items: center;
-            .searchWrap{
+
+            .searchWrap {
                 position: relative;
                 height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                i{
-                    color: #fff;
-                    cursor: pointer;
-                    &:hover{
-                        color: #c0b596;
+
+                a {
+                    display: flex;
+                    /* Added this to make the link a flex container */
+                    align-items: center;
+                    /* Align items vertically center */
+                    margin-right: 10px;
+                    /* Adjust margin as needed */
+                    margin-bottom: 10px;
+
+                    i {
+                        color: #fff;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #c0b596;
+                        }
                     }
                 }
-                .searchform{
+
+                .searchform {
                     position: absolute;
                     right: 0;
                     top: 150%;
@@ -191,27 +239,33 @@
                     opacity: 0;
                     transition: all .3s;
                     text-align: center;
+
                     @media (max-width:380px) {
                         right: -25px;
                     }
-                    &.active{
+
+                    &.active {
                         visibility: visible;
                         opacity: 1;
                         top: 100%;
                     }
-                    form{
+
+                    form {
                         position: relative;
-                        input{
+
+                        input {
                             background: #fff;
                             width: 100%;
                             height: 40px;
                             padding: 0 40px 0 10px;
-                            &:focus{
+
+                            &:focus {
                                 outline: none;
                                 box-shadow: none;
                             }
                         }
-                        button{
+
+                        button {
                             position: absolute;
                             right: 0;
                             top: 0;
@@ -221,55 +275,66 @@
                             color: #fff;
                             border: none;
                             cursor: pointer;
-                            &:hover{
+
+                            &:hover {
                                 background: #1d233c;
                             }
                         }
                     }
-                    
+
                 }
             }
-            .responsiveTrigger{
+
+            .responsiveTrigger {
                 margin-left: 30px;
                 cursor: pointer;
                 display: none;
+
                 @media (max-width:800px) {
                     display: block;
                 }
-                span{
+
+                span {
                     width: 20px;
                     height: 1px;
                     background: #fff;
                     display: block;
                     margin-bottom: 3px;
-                    &:last-child{
+
+                    &:last-child {
                         margin-bottom: 0;
                     }
                 }
             }
         }
-        &.headerBottomAreaStyelTwo{
+
+        &.headerBottomAreaStyelTwo {
             position: absolute;
             left: 0;
             width: 100%;
             z-index: 99;
-            background: rgba(255,255,255,.05);
-            border-bottom: 1px solid rgba(255,255,255,.07);
+            background: rgba(255, 255, 255, .05);
+            border-bottom: 1px solid rgba(255, 255, 255, .07);
+
             @media (max-width:800px) {
                 position: relative;
                 background: #272c3f;
             }
         }
     }
-    &.headerAreaStyleThree{
-        .headerBottomArea{
+
+    &.headerAreaStyleThree {
+        .headerBottomArea {
             background: transparent;
+
             @media (max-width:768px) {
                 background: #272c3f;
             }
-            .headerBottomMainWrapper{
+
+            .headerBottomMainWrapper {
                 background: #272c3f;
                 padding: 0px 15px;
+
                 @media (max-width:768px) {
                     padding: 0;
                 }

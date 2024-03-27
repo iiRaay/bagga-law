@@ -36,18 +36,19 @@ const heroSliders = [{
         text: 'The Most Talented Law Firm',
         button: 'Contact us now'
     },
-    {
-        images: 'slideWrapperTwo',
-        title: 'We Fight For Your Justice',
-        subTitle: 'As Like A Friend.',
-        text: 'The Most Talented Law Firm',
-        button: 'Contact us now'
-    },
+    // {
+    //     images: 'slideWrapperTwo',
+    //     title: 'We Fight For Your Justice',
+    //     subTitle: 'As Like A Friend.',
+    //     text: 'The Most Talented Law Firm',
+    //     button: 'Contact us now'
+    // },
 ]
 
-const services = [{
-        icon: 'flaticon-parents',
-        title: 'Family Law',
+const services = [
+    {
+        icon: 'flaticon-thief',
+        title: 'Criminal Law',
         content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
     {
@@ -57,17 +58,17 @@ const services = [{
     },
     {
         icon: 'flaticon-employee',
-        title: 'Business Law',
+        title: 'Immigration Law',
         content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
     {
-        icon: 'flaticon-thief',
-        title: 'Criminal Law',
+        icon: 'flaticon-parents',
+        title: 'Family Law',
         content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
     {
         icon: 'flaticon-university-graduate-hat',
-        title: 'Education Law',
+        title: 'Business Law',
         content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
     {
@@ -111,7 +112,7 @@ const HomePageOne = () => {
             />
             <Portfolio
                 className="portfolioArea"
-                title="Our Resent Case Studies"
+                title="Recent Decisions"
                 subTitle="Here Our Best Work"
                 portfolioItem={portfolioItem}
             />
@@ -135,9 +136,6 @@ const HomePageOne = () => {
                 title="Latest News"
                 subTitle="From Our Blog
                 "
-            />
-            <NewsLetter
-                className="newsLetterArea"
             />
             <FooterArea/>
         </Fragment>

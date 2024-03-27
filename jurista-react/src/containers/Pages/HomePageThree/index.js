@@ -138,9 +138,6 @@ const HomePageThree = () => {
                 subTitle="From Our Blog
                 "
             />
-            <NewsLetter
-                className="newsLetterArea"
-            />
             <FooterArea/>
         </Fragment>
     )

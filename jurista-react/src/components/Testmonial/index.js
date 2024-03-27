@@ -44,7 +44,7 @@ const Testmonial = ({ className }) => {
                     </div>
                     <div className="col-lg-7 offset-lg-1 col-md-6">
                         <div className="testimonialContent">
-                            <span>What People Say</span>
+                            <span>Our Reviews</span>
                             <h2>Client Testimonial</h2>
                             <Slider className="testmonialSlider" {...settings}>
                                 {sliders.map((slider, i) => (

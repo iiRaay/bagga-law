@@ -6,8 +6,8 @@ import SectionTitle from '../Title'
 import './style.scss'
 
 // images
-import teamMember1 from '../../images/expert/1.jpg'
-import teamMember2 from '../../images/expert/2.jpg'
+import teamMember1 from '../../images/Attorneys-single/rob-extended.jpg'
+import teamMember2 from '../../images/Attorneys-single/rohan.jpg'
 import teamMember3 from '../../images/expert/3.jpg'
 import teamMember4 from '../../images/expert/4.jpg'
 import teamMember5 from '../../images/expert/5.jpg'
@@ -15,17 +15,17 @@ import teamMember6 from '../../images/expert/6.jpg'
 
 const teams = [
     {
-        name: 'Alecgander Harry', level: 'Business Lawyer', image: teamMember1, socialMedia: [
+        name: 'Ravinder (Rob) Bagga', level: 'Business Lawyer', image: teamMember1, socialMedia: [
             'facebook', 'twitter', 'linkedin'
         ]
     },
     {
-        name: 'Lily Watson', level: 'Family Lawyer', image: teamMember2, socialMedia: [
+        name: 'Rohan Bagga', level: 'Family Lawyer', image: teamMember2, socialMedia: [
             'facebook', 'twitter', 'linkedin'
         ]
     },
     {
-        name: 'Willam Stephen', level: 'Criminal Lawyer', image: teamMember3, socialMedia: [
+        name: 'Navneet Kaur Punia', level: 'Criminal Lawyer', image: teamMember3, socialMedia: [
             'facebook', 'twitter', 'linkedin'
         ]
     },

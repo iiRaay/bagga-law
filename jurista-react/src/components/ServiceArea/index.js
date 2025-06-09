@@ -2,7 +2,7 @@ import React from "react";
 import SectionTitle from '../Title'
 import './style.scss'
 
-const ServiceArea = ({ className, title, subTitle,services }) => {
+const ServiceArea = ({ className, title, subTitle, services }) => {
     return (
         <div className={className}>
             <div className="container">

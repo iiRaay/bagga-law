@@ -97,7 +97,7 @@ const AboutPage = () => {
                 className="counterArea counterAreaStyleTwo"
             />
             <TeamMember
-                title="Qualified Attorneys "
+                title="Our Team"
                 subTitle="Meet Our Experts"
                 className="teamArea"
                 slider={true}

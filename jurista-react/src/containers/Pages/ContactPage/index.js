@@ -6,7 +6,7 @@ import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
 import Form from '../../../components/Form'
 // images
-import breadcumb from '../../../images/breadcumb/1.jpg'
+import breadcumb from '../../../images/slider/UpdatedBanner-6-8-2025.jpeg'
 
 import './style.scss'
 
@@ -38,10 +38,10 @@ const ContactPage = () => {
                                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
                                 </p>
                                 <h4>Address</h4>
-                                <span>245 King Street, Touterie Victoria 8520 Australia</span>
+                                <span>3825 34 Street N.E<br/>Suite 203 <br/>Calgary, Alberta<br/>T1Y6Z8</span>
                                 <h4>Phone</h4>
-                                <span>0-123-456-7890</span>
-                                <span>0-123-456-7890</span>
+                                <span>Inquiries: 1-403-250-7327</span>
+                                <span>24/7 Emergency Bail: 1-587-429-4983</span>
                                 <h4>Email</h4>
                                 <span>sample@gmail.com</span>
                             </div>

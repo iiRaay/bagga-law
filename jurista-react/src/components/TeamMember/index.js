@@ -8,7 +8,7 @@ import './style.scss'
 // images
 import teamMember1 from '../../images/Attorneys-single/rob-extended.jpg'
 import teamMember2 from '../../images/Attorneys-single/rohan.jpg'
-import teamMember3 from '../../images/expert/3.jpg'
+import teamMember3 from '../../images/Attorneys-single/temp-3.jpg'
 import teamMember4 from '../../images/expert/4.jpg'
 import teamMember5 from '../../images/expert/5.jpg'
 import teamMember6 from '../../images/expert/6.jpg'
@@ -30,20 +30,15 @@ const teams = [
         ]
     },
     {
-        name: 'Eshan Golly', level: 'Business Lawyer', image: teamMember4, socialMedia: [
+        name: '', level: 'Secretary', image: teamMember4, socialMedia: [
             'facebook', 'twitter', 'linkedin'
         ]
     },
     {
-        name: 'Daniel Dambeldor', level: 'Family Lawyer', image: teamMember5, socialMedia: [
+        name: '', level: 'Paralegal', image: teamMember5, socialMedia: [
             'facebook', 'twitter', 'linkedin'
         ]
-    },
-    {
-        name: 'Darcy Alec', level: 'Criminal Lawyer', image: teamMember6, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
+    }
 ]
 
 const settings = {

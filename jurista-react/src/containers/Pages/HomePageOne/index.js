@@ -14,7 +14,7 @@ import BlogArea from '../../../components/BlogArea'
 import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
 // images
-import about from '../../../images/about/2.jpg'
+import about from '../../../images/about/black_scale.jpg'
 import signature from '../../../images/about/1.png'
 
 // images
@@ -23,6 +23,7 @@ import portfolio2 from '../../../images/studies/2.jpg'
 import portfolio3 from '../../../images/studies/3.jpg'
 import portfolio4 from '../../../images/studies/4.jpg'
 import portfolio5 from '../../../images/studies/5.jpg'
+import ContactNotification from '../../../components/ContactNotification/ContactNotfication'
 
 const aboutText = [
     { text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at ,' },
@@ -89,6 +90,7 @@ const portfolioItem = [
 const HomePageOne = () => {
     return (
         <Fragment>
+                <ContactNotification />
             <header className="headerArea">
                 <HeaderTop className="headerTop" />
                 <HeaderBotton className="headerBottomArea" />
@@ -123,7 +125,7 @@ const HomePageOne = () => {
                 className="contactArea"
             />
             <TeamMember
-                title="Qualified Attorneys "
+                title="Our Team"
                 subTitle="Meet Our Experts"
                 className="teamArea"
                 slider={true}

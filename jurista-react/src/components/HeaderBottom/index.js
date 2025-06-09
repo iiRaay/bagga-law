@@ -16,6 +16,8 @@ const HeaderBottom = props => {
     const responsiveHandler = () => {
         setResponsive(!responsive)
     }
+
+    const canLiiBaggaURL = 'https://www.canlii.org/#search/jId=ab&sort=decisionDateDesc&text=Bagga&searchId=2025-06-08T16%3A46%3A26%3A238%2F82af6bb23dad42c4b97d1e5c69362502';
     return (
         <div className={props.className}>
             <div className="container">
@@ -30,29 +32,25 @@ const HeaderBottom = props => {
                         </div>
                         <div className={responsive ? "col-lg-8 responsiveWrapper active" : "col-lg-8 responsiveWrapper"}>
                             <ul className="mainMenuWrap">
-                                <li><NavLink exact to='/'>Home</NavLink>
+                                <li><NavLink exact to='/'>Home</NavLink></li>
+
+                                <li><NavLink exact to='/attorneys'>Our Team</NavLink></li>
+
+                                <li><NavLink exact to='/practice'>Expertise</NavLink>
                                     <ul className="subMenu">
-                                        <li><NavLink exact to='/'>Home One</NavLink></li>
-                                        <li><NavLink exact to='/home-two'>Home Two</NavLink></li>
-                                        <li><NavLink exact to='/home-three'>Home Three</NavLink></li>
-                                    </ul>
-                                </li>
-                              <li><NavLink exact to='/attorneys'>Our Team</NavLink>
-                                    <ul className="subMenu">
-                                        <li><NavLink exact to='/attorneys'>Attorneys</NavLink></li>
-                                        <li><NavLink exact to='/attorneys-single'>Attorneys single</NavLink></li>
-                                    </ul>
-                                </li>                                <li><NavLink exact to='/practice'>Expertise</NavLink>
-                                    <ul className="subMenu">
-                                        <li><NavLink exact to='/practice'>Practice areas</NavLink></li>
-                                        <li><NavLink exact to='/practice-details'>Practice areas single</NavLink></li>
+                                        <li><NavLink exact to='/practice-details' state={{ id: 1}}>Criminal Law</NavLink></li>
+                                        <li><NavLink exact to='/practice-details' state={{ id: 2}}>Personal Injury</NavLink></li>
+                                        <li><NavLink exact to='/practice-details' state={{ id: 3}}>Family Law</NavLink></li>
+                                        <li><NavLink exact to='/practice-details' state={{ id: 4}}>Immigration Law</NavLink></li>
+                                        <li><NavLink exact to='/practice-details' state={{ id: 5}}>Real Estate Law</NavLink></li>
+                                        <li><NavLink exact to='/practice-details' state={{ id: 6}}>Business Law</NavLink></li>
                                     </ul>
                                 </li>
 
                                 <li><NavLink exact to='/case-stadies'>Client Resources</NavLink>
                                     <ul className="subMenu">
-                                        <li><NavLink exact to='/case-stadies'>Cases</NavLink></li>
-                                        <li><NavLink exact to='/case-stadies-details'>Case single</NavLink></li>
+                                        <li><a href={canLiiBaggaURL}>Cases</a></li>
+                                        {/* <li><NavLink exact to='/case-stadies-details'>Case single</NavLink></li> */}
                                     </ul>
                                 </li>
                                 <li><NavLink exact to='/contact'>Contact Us</NavLink></li>

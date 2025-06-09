@@ -24,12 +24,12 @@ const TeamPage = () => {
             </header>
             <Breadcumb
                 className="breadcumbArea"
-                title="Our Attorneys"
+                title="Our Firm"
                 breadcumbMenu={breadcumbMenu}
                 background={groupBanner}
             />
             <TeamMember
-                title="Qualified Attorneys "
+                title="Attorneys"
                 subTitle="Meet Our Experts"
                 className="teamArea teamAreaStyleTwo"
                 noGutters={true}

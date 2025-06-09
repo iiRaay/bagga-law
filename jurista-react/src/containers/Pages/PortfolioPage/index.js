@@ -6,7 +6,7 @@ import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
 import Portfolio from '../../../components/Portfolio'
 // images
-import breadcumb from '../../../images/breadcumb/1.jpg'
+import breadcumb from '../../../images/slider/UpdatedBanner-6-8-2025.jpeg'
 // images
 import portfolio1 from '../../../images/studies/1.jpg'
 import portfolio2 from '../../../images/studies/2.jpg'

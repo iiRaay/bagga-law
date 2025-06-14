@@ -1,24 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Router, NavLink } from 'react-router-dom'
 import './style.scss'
-
-const cetagoryMenu = [
-    { name: 'Family Law', route: "case-stadies-details" },
-    { name: 'Criminal Law', route: "case-stadies-details" },
-    { name: 'Business Law', route: "case-stadies-details" },
-    { name: 'Personal Injury', route: "case-stadies-details" },
-    { name: 'Education Law', route: "case-stadies-details" },
-    { name: 'Drugs Crime', route: "case-stadies-details" },
-]
 
 const CetagorySidebar = ({ className, title }) => {
     return (
         <div className={className}>
             <h3 className="sidebarTitle">{title}</h3>
             <ul>
-                {cetagoryMenu.map((cetagory,i) => (
-                    <li key={i}><Link to={cetagory.route}>{cetagory.name}</Link></li>
-                ))}
+                <li><NavLink exact to='/practice-details' state={{ id: 1}}>Criminal Law</NavLink></li>
+                <li><NavLink exact to='/practice-details' state={{ id: 2}}>Personal Injury</NavLink></li>
+                <li><NavLink exact to='/practice-details' state={{ id: 3}}>Family Law</NavLink></li>
+                <li><NavLink exact to='/practice-details' state={{ id: 4}}>Immigration Law</NavLink></li>
+                <li><NavLink exact to='/practice-details' state={{ id: 5}}>Real Estate Law</NavLink></li>
+                <li><NavLink exact to='/practice-details' state={{ id: 6}}>Business Law</NavLink></li>
             </ul>
         </div>
     )

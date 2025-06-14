@@ -14,46 +14,11 @@ import FooterArea from '../../../components/FooterArea'
 // images
 import about from '../../../images/about/2.jpg'
 import breadcumb from '../../../images/breadcumb/1.jpg'
-
+import services from '../../../constants/services'
 import './style.scss'
+import aboutText from '../../../constants/aboutUs'
 
-const aboutText = [
-    { text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at ,' },
-    { text: 'and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum' },
-]
 
-const services = [
-    {
-        icon: 'flaticon-parents',
-        title: 'Family Law',
-        content: 'There are many variations of passages of Lorem '
-    },
-    {
-        icon: 'flaticon-wounded',
-        title: 'Personal Injury',
-        content: 'There are many variations of passages of Lorem '
-    },
-    {
-        icon: 'flaticon-employee',
-        title: 'Business Law',
-        content: 'There are many variations of passages of Lorem '
-    },
-    {
-        icon: 'flaticon-thief',
-        title: 'Criminal Law',
-        content: 'There are many variations of passages of Lorem '
-    },
-    {
-        icon: 'flaticon-university-graduate-hat',
-        title: 'Education Law',
-        content: 'There are many variations of passages of Lorem '
-    },
-    {
-        icon: 'flaticon-house',
-        title: 'Real Estate Law',
-        content: 'There are many variations of passages of Lorem '
-    },
-]
 
 const breadcumbMenu = [
     {name:'Home',route:'/'},
@@ -76,8 +41,8 @@ const AboutPage = () => {
             <Service className="serviceArea mt-0" />
             <About
                 className="aboutArea aboutAreaStyleTwo"
-                title="Why You Need Us"
-                subTitle="We Are Expert"
+                title="About us"
+                subTitle="Who we are"
                 images={about}
                 orderLast="order-last"
                 videoId="XxVg_s8xAms"

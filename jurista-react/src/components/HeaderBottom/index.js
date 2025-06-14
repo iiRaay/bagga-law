@@ -49,8 +49,7 @@ const HeaderBottom = props => {
 
                                 <li><NavLink exact to='/case-stadies'>Client Resources</NavLink>
                                     <ul className="subMenu">
-                                        <li><a href={canLiiBaggaURL}>Cases</a></li>
-                                        {/* <li><NavLink exact to='/case-stadies-details'>Case single</NavLink></li> */}
+                                        <li><a href={canLiiBaggaURL} target="_blank" rel="noopener noreferrer">Cases</a></li>
                                     </ul>
                                 </li>
                                 <li><NavLink exact to='/contact'>Contact Us</NavLink></li>

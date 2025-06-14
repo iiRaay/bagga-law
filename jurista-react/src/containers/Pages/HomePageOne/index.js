@@ -24,6 +24,7 @@ import portfolio3 from '../../../images/studies/3.jpg'
 import portfolio4 from '../../../images/studies/4.jpg'
 import portfolio5 from '../../../images/studies/5.jpg'
 import ContactNotification from '../../../components/ContactNotification/ContactNotfication'
+import services from '../../../constants/services'
 
 const aboutText = [
     { text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at ,' },
@@ -46,38 +47,7 @@ const heroSliders = [{
     // },
 ]
 
-const services = [
-    {
-        icon: 'flaticon-thief',
-        title: 'Criminal Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of '
-    },
-    {
-        icon: 'flaticon-wounded',
-        title: 'Personal Injury',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of '
-    },
-    {
-        icon: 'flaticon-employee',
-        title: 'Immigration Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of '
-    },
-    {
-        icon: 'flaticon-parents',
-        title: 'Family Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of '
-    },
-    {
-        icon: 'flaticon-university-graduate-hat',
-        title: 'Business Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of '
-    },
-    {
-        icon: 'flaticon-house',
-        title: 'Real Estate Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of '
-    },
-]
+
 
 const portfolioItem = [
     { images: portfolio1, title: 'General Service', subtitle: 'Corporate' },

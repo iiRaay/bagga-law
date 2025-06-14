@@ -37,7 +37,7 @@
         }
         .serviceContent{
             overflow: hidden;
-            h3{
+            h3,a{
                 color: #373737;
                 font-size: 24px;
                 padding-bottom: 10px;
@@ -111,11 +111,14 @@
                 }
             }
             .serviceContent {
-                h3{
+                h3,a{
                     font-size: 30px;
                     color: #fff;
                     margin-bottom: 10px;
                     padding-bottom: 0;
+                    :hover{
+                        color: #c0b596;
+                    }
                     @media (max-width:1100px) {
                         font-size: 20px;
                     }
@@ -161,7 +164,7 @@
                 }
             }
             .serviceContent{
-                h3{
+                h3,a{
                     padding-bottom: 0;
                     padding-top: 20px;
                     &::before{

@@ -3,43 +3,70 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SectionTitle from '../Title'
+import teamMembers from '../../constants/teamMembers'
 import './style.scss'
 
-// images
-import teamMember1 from '../../images/Attorneys-single/rob-extended.jpg'
-import teamMember2 from '../../images/Attorneys-single/rohan.jpg'
-import teamMember3 from '../../images/Attorneys-single/temp-3.jpg'
-import teamMember4 from '../../images/expert/4.jpg'
-import teamMember5 from '../../images/expert/5.jpg'
-import teamMember6 from '../../images/expert/6.jpg'
 
-const teams = [
-    {
-        name: 'Ravinder (Rob) Bagga', level: 'Business Lawyer', image: teamMember1, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
-    {
-        name: 'Rohan Bagga', level: 'Family Lawyer', image: teamMember2, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
-    {
-        name: 'Navneet Kaur Punia', level: 'Criminal Lawyer', image: teamMember3, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
-    {
-        name: '', level: 'Secretary', image: teamMember4, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
-    {
-        name: '', level: 'Paralegal', image: teamMember5, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    }
-]
+const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
+    return (
+        <div className={className}>
+            <div className="container">
+                <div className={!noGutters ? 'row' : 'row no-gutters'}>
+                    <div className="col-12">
+                        <SectionTitle
+                            title={title}
+                            subTitle={subTitle}
+                        />
+                    </div>
+                    {slider ? (
+                        <div className="col-12">
+                            <Slider className="teamSlideArea" {...settings}>
+                                {teamMembers.map((team, i) => (
+                                    <div key={i} className="teamWrapper">
+                                        <div className="teamImage">
+                                            <img src={team.image} alt="" />
+                                        </div>
+                                        <div className="teamContent">
+                                            <h3>{team.name}</h3>
+                                            <span>{team.level}</span>
+                                            <ul>
+                                                {team.socialMedia.map(social => (
+                                                    <li key={social}><a href="#"><i className={`fa fa-${social}`} aria-hidden="true"></i></a></li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                ))}
+                            </Slider>
+                        </div>
+                    ) : (
+                            <Fragment>
+                                {teamMembers.map((team, i) => (
+                                    <div key={i} className="col-lg-4 col-md-6 col-12">
+                                        <div className="teamWrapper">
+                                            <div className="teamImage">
+                                                <img src={team.image} alt="" />
+                                            </div>
+                                            <div className="teamContent">
+                                                <h3>{team.name}</h3>
+                                                <span>{team.level}</span>
+                                                <ul>
+                                                    {team.socialMedia.map(social => (
+                                                        <li key={social}><a href="#"><i className={`fa fa-${social}`} aria-hidden="true"></i></a></li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </Fragment>
+                        )}
+                </div>
+            </div>
+        </div>
+    )
+}
+export default TeamMember
 
 const settings = {
     dots: false,
@@ -77,63 +104,3 @@ const settings = {
         }
     ]
 };
-const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
-    return (
-        <div className={className}>
-            <div className="container">
-                <div className={!noGutters ? 'row' : 'row no-gutters'}>
-                    <div className="col-12">
-                        <SectionTitle
-                            title={title}
-                            subTitle={subTitle}
-                        />
-                    </div>
-                    {slider ? (
-                        <div className="col-12">
-                            <Slider className="teamSlideArea" {...settings}>
-                                {teams.map((team, i) => (
-                                    <div key={i} className="teamWrapper">
-                                        <div className="teamImage">
-                                            <img src={team.image} alt="" />
-                                        </div>
-                                        <div className="teamContent">
-                                            <h3>{team.name}</h3>
-                                            <span>{team.level}</span>
-                                            <ul>
-                                                {team.socialMedia.map(social => (
-                                                    <li key={social}><a href="#"><i className={`fa fa-${social}`} aria-hidden="true"></i></a></li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                    </div>
-                                ))}
-                            </Slider>
-                        </div>
-                    ) : (
-                            <Fragment>
-                                {teams.map((team, i) => (
-                                    <div key={i} className="col-lg-4 col-md-6 col-12">
-                                        <div className="teamWrapper">
-                                            <div className="teamImage">
-                                                <img src={team.image} alt="" />
-                                            </div>
-                                            <div className="teamContent">
-                                                <h3>{team.name}</h3>
-                                                <span>{team.level}</span>
-                                                <ul>
-                                                    {team.socialMedia.map(social => (
-                                                        <li key={social}><a href="#"><i className={`fa fa-${social}`} aria-hidden="true"></i></a></li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </Fragment>
-                        )}
-                </div>
-            </div>
-        </div>
-    )
-}
-export default TeamMember

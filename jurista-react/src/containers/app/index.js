@@ -2,8 +2,6 @@ import React, { Fragment, Component } from 'react';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
 import HomePageOne from '../Pages/HomePageOne'
-import HomePageTwo from '../Pages/HomePageTwo'
-import HomePageThree from '../Pages/HomePageThree'
 import AboutPage from '../Pages/AboutPage'
 import PracticePage from '../Pages/PracticePage'
 import PracticeSinglePage from '../Pages/PracticeSinglePage'
@@ -25,8 +23,6 @@ class App extends Component {
                     <ToastContainer autoClose={2500} position="top-center" />
                     <Routes>
                         <Route exact path="/" element={<HomePageOne/>} />
-                        <Route exact path="home-two" element={<HomePageTwo/>} />
-                        <Route exact path="home-three" element={<HomePageThree/>} />
                         <Route exact path="about" element={<AboutPage/>} />
                         <Route exact path="practice" element={<PracticePage/>} />
                         <Route exact path="practice-details" element={<PracticeSinglePage/>} />

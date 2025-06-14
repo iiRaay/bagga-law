@@ -10,7 +10,7 @@ import SingleContentArea from '../../../components/SingleContentArea'
 import { useLocation } from 'react-router-dom';
 
 // images
-import breadcumb from '../../../images/slider/UpdatedBanner-6-8-2025.jpeg'
+import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg'
 import banner from '../../../images/about/black_scale.jpg'
 import single from '../../../images/practice/3.jpg'
 import practiceOptions from '../../../constants/practices/practiceSinglePage'

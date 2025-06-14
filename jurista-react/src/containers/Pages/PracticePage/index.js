@@ -10,7 +10,7 @@ import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
 import services from '../../../constants/services'
 // images
-import breadcumb from '../../../images/slider/UpdatedBanner-6-8-2025.jpeg'
+import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg'
 import './style.scss'
 
 

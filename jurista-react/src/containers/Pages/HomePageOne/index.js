@@ -26,10 +26,38 @@ import services from "../../../constants/services";
 
 const aboutText = [
   {
-    text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at ,",
+    text: "Bagga & Associates (formerly Bagga Law Office) was founded in 2000 by Mr. Ravinder (Rob) Bagga, a seasoned lawyer with over 25 years of legal experience. Since its founding, the firm has built a strong reputation for delivering dependable, strategic, and client-focused legal services.",
   },
   {
-    text: 'and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum',
+    text: "We are trial lawyers who love the courtroom. Advocacy is at the heart of what we do — whether it’s defending a criminal charge, navigating a high-stakes family dispute, or litigating a complex civil matter. We are confident, prepared, and relentless when it comes to protecting our clients’ rights in court.",
+  },
+  {
+    text: "At the same time, we understand that not every case needs to go to trial. When the other side is reasonable, we are equally skilled at negotiating fair and practical resolutions that save our clients time, cost, and emotional stress — without compromising their legal position.",
+  },
+  {
+    text: (
+      <>
+        As a boutique firm, we offer personalized service across a range of
+        practice areas, including:
+        <ul
+          style={{
+            listStyleType: "disc",
+            paddingLeft: "1.5rem",
+            marginTop: "0.5rem",
+          }}
+        >
+          <li>Criminal Defence</li>
+          <li>Business Law</li>
+          <li>Family Law</li>
+          <li>Immigration Law</li>
+          <li>Real Estate Law (Residential & Commercial)</li>
+          <li>Personal Injury Law (including No-Fault Car Accidents)</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    text: "At Bagga & Associates, we combine deep legal knowledge with courtroom tenacity and a client-first mindset. We are committed to guiding you through every step of the legal process with integrity, professionalism, and unwavering dedication.",
   },
 ];
 

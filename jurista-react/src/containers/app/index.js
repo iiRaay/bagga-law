@@ -13,6 +13,7 @@ import ContactPage from "../Pages/ContactPage";
 import BlogLeftPage from "../Pages/BlogLeftPage";
 import BlogRightPage from "../Pages/BlogRightPage";
 import BlogFullWidth from "../Pages/BlogFullWidth";
+import CasesPage from "../Pages/CasesPage";
 import "./App.css";
 
 class App extends Component {
@@ -25,20 +26,13 @@ class App extends Component {
             <Route exact path="/" element={<HomePageOne />} />
             <Route exact path="about" element={<AboutPage />} />
             <Route exact path="practice" element={<PracticePage />} />
-            <Route
-              exact
-              path="practice-details"
-              element={<PracticeSinglePage />}
-            />
+            <Route exact path="practice-details" element={<PracticeSinglePage />}/>
             <Route exact path="case-stadies" element={<PortfolioPage />} />
-            <Route
-              exact
-              path="case-stadies-details"
-              element={<SinglePortfolioPage />}
-            />
+             <Route exact path="case-stadies-details" element={<SinglePortfolioPage />}/> {/* typo? */}
             <Route exact path="attorneys" element={<TeamPage />} />
             <Route exact path="attorneys-single" element={<SingleTeamPage />} />
             <Route exact path="contact" element={<ContactPage />} />
+            <Route exact path="cases" element={<CasesPage />} />
             <Route exact path="blog-left" element={<BlogLeftPage />} />
             <Route exact path="blog-right" element={<BlogRightPage />} />
             <Route exact path="blog-fullwidth" element={<BlogFullWidth />} />

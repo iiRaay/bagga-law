@@ -7,7 +7,23 @@
     width: 100%;
     height: 100%;
 
-        // Selected year
+    .casesPageBannerImages{
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            width: 32%;
+            max-width: 32%;
+            height: auto;
+            max-height: 260px; 
+            object-fit: contain; 
+            display: block;
+            padding: 0.25rem;
+        }
+    }
+
     .casesPageBanner h2{
         font-family: sans-serif;
         font-weight: 400;

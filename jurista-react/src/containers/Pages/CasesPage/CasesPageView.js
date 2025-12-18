@@ -4,6 +4,8 @@ import HeaderTop from '../../../components/HeaderTop'
 import Breadcumb from '../../../components/Breadcumb'
 import FooterArea from '../../../components/FooterArea'
 import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg'
+import placeholderImage1 from '../../../images/slider/UpdatedBanner-6-8-2025.jpeg'
+import placeholderImage2 from '../../../images/logo/ba-logo-cropped.png'      
 import './CasesPageStyles.scss'
 import { caseDataByYear } from './StaticCaseData'
 const breadcumbMenu = [
@@ -61,13 +63,16 @@ const CasesPage = () => {
             />
 
             <div className="casesPageContainer">
+                <div className="casesPageBannerImages">
+                    <img src={placeholderImage1} alt="Cases Banner" />
+                    <img src={placeholderImage2} alt="Cases Banner" />
+                    <img src={breadcumb} alt="Cases Banner" />
+                </div>
                 <div className="casesPageBanner">
                     <h2>Cases For {selectedYear}</h2>
                 </div>
                 <div className="grid-container">
                     <div className='col-caseData'>
-                        
-                       
                         {caseData && caseData.map((caseItem, index) => (
                             <div className="caseDataItem" key={index}>
                                 <a target="_blank" className="caseDataTitle" href={caseItem.url}>

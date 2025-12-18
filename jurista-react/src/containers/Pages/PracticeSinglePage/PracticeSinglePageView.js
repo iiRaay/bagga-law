@@ -77,7 +77,7 @@ const PracticeSinglePage = () => {
                                     className="bannerWrapper"
                                 />
                                 <CetagorySidebarView
-                                    title="Category"
+                                    title="Exptertise"
                                     className="cetagoryWrap"
                                 />
                             </aside>

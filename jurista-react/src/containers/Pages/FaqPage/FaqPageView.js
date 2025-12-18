@@ -9,7 +9,7 @@ import './FaqPageStyles.scss'
 import { faq } from './FaqData' 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
-    { name: 'Pages', route: '/pages' },
+    { name: 'ClientResources', route: '/pages' },
     { name: 'FAQ', },
 ]
 
@@ -64,7 +64,25 @@ const FaqPageView = () => {
                                             </div>
                                             {isExpanded && (
                                                 <div className='answer'>
-                                                    <p>{faq.answer}</p>
+                                                    {Array.isArray(faq.answers) ? (
+                                                        faq.answers.map((section, sIdx) => (
+                                                            <div key={sIdx} className="answer-section">
+                                                                {section.subtitle && (
+                                                                    <h5 className="answer-subtitle">{section.subtitle}</h5>
+                                                                )}
+                                                                <ul>
+                                                                    {section.answer.map((ans, ai) => (
+                                                                        <li
+                                                                            key={ai}
+                                                                            dangerouslySetInnerHTML={{ __html: String(ans) }}
+                                                                        />
+                                                                    ))}
+                                                                </ul>
+                                                            </div>
+                                                        ))
+                                                    ) : (
+                                                        <p dangerouslySetInnerHTML={{ __html: String(faq.answers) }} />
+                                                    )}
                                                 </div>
                                             )}
                                         </div>

@@ -21,8 +21,8 @@ import './SinglePortfolioStyle.scss'
 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
-    { name: 'Resent Case Studies', route: '/case-stadies' },
-    { name: 'Case Stadies Details' }
+    { name: 'Resent Case Studies', route: '/case-studies' },
+    { name: 'Case Studies Details' }
 ]
 
 const portfolioItem = [
@@ -40,7 +40,7 @@ const SinglePortfolioPage = () => {
             </header>
             <Breadcumb
                 className="breadcumbArea"
-                title="Case Stadies"
+                title="Case Studies"
                 breadcumbMenu={breadcumbMenu}
                 background={breadcumb}
             />

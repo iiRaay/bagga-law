@@ -29,8 +29,8 @@ class App extends Component {
             <Route path="frequently-asked" element={<FaqPageView />} />
             <Route path="practice" element={<PracticePageView />} />
             <Route path="practice-details/:id" element={<PracticeSinglePage />}/>
-            <Route path="case-stadies" element={<PortfolioPage />} />
-            <Route path="case-stadies-details" element={<SinglePortfolioPage />}/> {/* typo? */}
+            <Route path="case-studies" element={<PortfolioPage />} />
+            <Route path="case-studies-details" element={<SinglePortfolioPage />}/> {/* typo? */}
             <Route path="attorneys" element={<TeamPage />} />
             <Route path="attorneys-single" element={<SingleTeamPage />} />
             <Route path="contact" element={<ContactPageView />} />

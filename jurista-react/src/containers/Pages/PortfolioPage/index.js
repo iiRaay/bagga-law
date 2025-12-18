@@ -40,7 +40,7 @@ const PortfolioPage = () => {
             </header>
             <Breadcumb
                 className="breadcumbArea"
-                title="Case Stadies"
+                title="Case Studies"
                 breadcumbMenu={breadcumbMenu}
                 background={breadcumb}
             />

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import MainHeader from '../../../components/MainHeader/MainHeader'
 import Breadcumb from '../../../components/Breadcumb'
 import CetagorySidebarView from '../../../components/CetagorySidebar/CatagorySideBarView'
@@ -12,19 +12,50 @@ import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg'
 import banner from '../../../images/contact/Contact_us_pic.png'
 import practiceOptions from '../../../constants/practices/practiceSinglePage'
 import './PracticeSingleStyle.scss'
+import { isString } from 'joi-browser'
 
 
-const breadcumbMenu = [
-    { name: 'Home', route: '/' },
-    { name: 'Practice', route: '/practice' },
-    { name: 'Practice area details' }
-]
+
 
 
 const PracticeSinglePage = () => {
     const { id } = useParams();
     const practiceId = parseInt(id) || 1;
-    
+    const [routeName, setRouteName] = useState('');
+    useEffect(() =>{
+        // This should fire off every time id is changed
+        var parsedId = parseInt(id);
+        if(isNaN(parsedId)) return;
+        console.log("test", parsedId);
+
+        switch(parsedId)
+        {
+            case 1: setRouteName('Criminal Law')
+            break;
+
+            case 2: setRouteName('Personal Injury Law')
+            break;
+
+            case 3: setRouteName('Family Law')
+            break;
+
+            case 4: setRouteName('Immigration Law')
+            break;
+
+            case 5: setRouteName('Real Estate Law')
+            break;
+
+            case 6: setRouteName('Business Law')
+            break;
+          
+            default: setRouteName('n/a')
+        }
+    },[id])
+
+    const breadcumbMenu = [
+    { name: 'Home', route: '/' },
+    { name: routeName }]
+
     return (
         <Fragment>
             <header className="headerArea">

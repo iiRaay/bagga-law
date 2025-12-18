@@ -152,20 +152,20 @@
             display: flex;
             flex-direction: column;
             margin: 1rem;
-            padding: 2rem;
+            padding: 1rem;
             background-color: color(bltextbox);
             box-shadow: 0 6px 14px rgba(0,0,0,0.08);
         }
 
         .col-caseData .caseDataSummary{
-            font-size: 24px;
+            font-size: 18px;
             margin-bottom: 1rem;
         }
 
         .col-caseData .caseDataTitle h3{
             color: color(bldark);
             font-family: sans-serif;
-            font-size: 40px;
+            font-size: 32px;
             margin-bottom: 1rem;
             vertical-align: top;
             align-self: stretch;
@@ -176,7 +176,7 @@
         }
 
         .caseDataItem .caseDataLink{
-            font-size: 24px;
+            font-size: 18px;
             text-decoration: underline;
             align-self: flex-end;
             margin-top: auto;

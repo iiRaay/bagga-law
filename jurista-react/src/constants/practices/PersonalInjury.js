@@ -13,24 +13,15 @@ const personalInjury = {
                 alleviate the financial and emotional burden on you and your family by managing all aspects of the claim, 
                 negotiating with insurance companies, and pursuing litigation to secure the maximum settlement or award you are entitled to.
             </p>
-
-            <b>Initial Consultation Documents</b>
-            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-                <li>Accident Details</li>
-                <li>Injury and Medical Records</li>
-                <li>Financial Documentation</li>
-                <li>Insurance Information</li>
-            </ul>
         </Fragment>
     ),
 
-    avatartitle: 'How can Personal Injury Law help you?',
+    avatartitle: 'Initial Consultation Documents',
     avatarlistitem: [
-        'Get compensation for your injuries and losses',
-        'Protect your rights and interests in personal injury claims',
-        'Negotiate with insurance companies to get a fair settlement',
-        'Ensure a smooth and efficient claims process',
-        'Get expert guidance on personal injury laws and regulations',
+        'Accident Details',
+        'Injury and Medical Records',
+        'Financial Documentation',
+        'Insurance Information'
     ]
 }
 

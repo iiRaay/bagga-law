@@ -13,28 +13,18 @@ const criminalLaw = {
                 the best possible outcome—whether through negotiation, dismissal, or aggressive litigation in court. We offer clear guidance and 
                 unwavering support during this challenging time, focusing on strategic defense tailored to the unique facts of your case.
             </p>
-            
-            <b>Initial Consultation Documents</b>
-            
-            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-                <li>Photo Identification</li>
-                <li>Prior Criminal Record (if applicable)</li>
-                <li>Charging Document</li>
-                <li>Appearance Notice/Promise to Appear (PTA)</li>
-                <li>Recognizance</li>
-                <li>Police Incident/Case Number</li>
-                <li>Subpoenas or Warrants</li>
-            </ul>
         </Fragment>
     ),
 
-    avatartitle: 'How can Criminal Law help you?',
+    avatartitle: 'Initial Consultation Documents',
     avatarlistitem: [
-        'Protect your rights and freedom from unfair prosecution',
-        'Get expert guidance on the charges against you and the potential consequences',
-        'Develop a strong defense strategy to achieve the best possible outcome',
-        'Negotiate with prosecutors to reduce charges or penalties',
-        'Ensure a fair trial and protect your reputation',
+        'Photo Identification',
+        'Prior Criminal Record (if applicable)',
+        'Charging Document',
+        'Appearance Notice/Promise to Appear (PTA)',
+        'Recognizance',
+        'Police Incident/Case Number',
+        'Subpoenas or Warrants',
     ]
 }
 

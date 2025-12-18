@@ -19,7 +19,6 @@ const SingleContentArea = ({ className, image, title, heading, body, avatartitle
                     {body}
                 </div>
 
-                <p>This is a condensed list we curated for this page, for details and other Frequently Asked Questions visit our <NavLink to='/frequently-asked'>FAQ page</NavLink></p>
                 <div className="avatarWrap">
                     <div className="row">
                         <div className="col-md-4">
@@ -33,6 +32,7 @@ const SingleContentArea = ({ className, image, title, heading, body, avatartitle
                                 ))}
 
                             </ul>
+                            <p style={{fontSize:14}}>This is a condensed list we curated for this page, for details and other Frequently Asked Questions visit our <NavLink to='/frequently-asked'>FAQ page</NavLink></p>
                         </div>
                     </div>
                 </div>

@@ -13,24 +13,16 @@ const immigrationLaw = {
                 policies to ensure your application is prepared accurately and strategically, in order to minimize delays and maximize the chances of a successful 
                 migration.
             </p>
-
-            <b>Initial Consultation Documents</b>
-            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-                <li>Valid Passport(s)</li>
-                <li>Visa/Permit's </li>
-                <li>Education and Employment Records</li>
-                <li>Sponsor/Employer Details</li>
-            </ul>
         </Fragment>
     ),
 
-    avatartitle: 'How can Immigration Law help you?',
+    avatartitle: 'Initial Consultation Documents',
     avatarlistitem: [
-        'Get expert guidance on visa applications and green card processes',
-        'Protect your rights and interests in immigration proceedings',
+        'Valid Passport(s)',
+        `Visa/Permit's`,
         'Ensure a smooth and efficient citizenship process',
-        'Negotiate with immigration authorities to resolve issues',
-        'Stay up-to-date on changing immigration laws and regulations',
+        'Education and Employment Records',
+        'Sponsor/Employer Details',
     ]
 }
 

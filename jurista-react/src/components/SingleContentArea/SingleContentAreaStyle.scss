@@ -57,19 +57,6 @@
         }
         .avatarWrap{
             padding-top: 30px;
-            position: relative;
-            &::before{
-                content: "";
-                position: absolute;
-                left: 50%;
-                top: 0;
-                transform: translate(-50%, -50%);
-                width: 80%;
-                height: 4px;
-                border-radius: 1px;
-                background: color(bldark);
-                box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-            }
 
             img{
                 width: 100%;

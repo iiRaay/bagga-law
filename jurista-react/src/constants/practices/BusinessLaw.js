@@ -11,26 +11,17 @@ const businessLaw = {
                 mergers and acquisitions, and commercial litigation. We act as a trusted legal partner, offering practical solutions that align with your 
                 commercial objectives and support sustainable growth.
             </p>
-
-            <b>Initial Consultation Documents</b>
-            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-                <li>Corporate Registration Documents</li>
-                <li>Shareholder/Director/Officer List</li>
-                <li>Financial Statements</li>
-                <li>Business Plan</li>
-                <li>Shareholder or Partnership Agreements.</li>
-                <li>Business Lease Agreement.</li>
-            </ul>
         </Fragment>
     ),
 
-    avatartitle: 'How can Business Law help you?',
+    avatartitle: 'Initial Consultation Documents',
     avatarlistitem: [
-        'Protect your business from costly lawsuits and disputes',
-        'Ensure compliance with regulatory requirements and laws',
-        'Negotiate and draft contracts that benefit your business',
-        'Minimize risks and maximize opportunities for growth',
-        'Get expert guidance on business structuring and asset protection',
+        'Corporate Registration Documents',
+        'Shareholder/Director/Officer List',
+        'Financial Statements',
+        'Business Plan',
+        'Shareholder or Partnership Agreements.',
+        'Business Lease Agreement.',
     ]
 }
 

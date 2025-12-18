@@ -5,11 +5,22 @@ const familyLaw = {
     body: (
         <Fragment>
             <p>
-                Family law cases can be complex and emotionally charged. It is important to have a compassionate and experienced attorney to guide you through the process. Whether you are dealing with divorce, child custody, or other family-related matters, a skilled attorney can help you reach the best possible outcome.
+                Family matters require both legal acuity and compassionate counsel. 
+                Bagga & Associates offers sensitive and effective legal representation for the full scope of family law litigation. 
+                We guide clients through complex emotional transitions with discretion and professionalism. 
+                Our services include divorce and separation, child custody and access disputes, spousal and child support, and the division of marital property.
+                We prioritize amicable resolutions where possible, 
+                but we are fully prepared to take full legal action towards affirming your parental rights and financial future.
             </p>
-            <p>
-                Your attorney can assist you in understanding your rights and options, negotiating settlements, and representing you in court if necessary. With the right legal support, you can navigate the challenges of family law with confidence.
-            </p>
+
+            <b>Initial Consultation Documents</b>
+            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                <li>Any existing court orders</li>
+                <li>Any existing agreements</li>
+                <li>Financial Disclosure Records</li>
+                <li>Property Information</li>
+                <li>Children's Details (If Applicable)</li>
+            </ul>
         </Fragment>
     ),
 

@@ -5,11 +5,22 @@ const personalInjury = {
     body: (
         <Fragment>
             <p>
-                If you have been injured in an accident, you may be feeling overwhelmed and unsure of what to expect. The first step is to seek out the advice of a qualified personal injury attorney. A good attorney can help you navigate the legal process and ensure that your rights are protected.
+                When an injury occurs due to the negligence or wrongdoing of another, 
+                you deserve comprehensive compensation for your medical bills, lost wages, 
+                chronic pain and any additional complications. Bagga & Associates is dedicated 
+                to advocating fiercely for victims of personal injury. We handle a wide range of cases, 
+                including <b>motor vehicle accidents, slip-and-falls, and workplace incidents</b>. Our goal is to 
+                alleviate the financial and emotional burden on you and your family by managing all aspects of the claim, 
+                negotiating with insurance companies, and pursuing litigation to secure the maximum settlement or award you are entitled to.
             </p>
-            <p>
-                Depending on the severity of your injuries, you may be facing a long recovery period and mounting medical bills. An experienced personal injury attorney can help you build a strong case and work towards the best possible outcome.
-            </p>
+
+            <b>Initial Consultation Documents</b>
+            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                <li>Accident Details</li>
+                <li>Injury and Medical Records</li>
+                <li>Financial Documentation</li>
+                <li>Insurance Information</li>
+            </ul>
         </Fragment>
     ),
 

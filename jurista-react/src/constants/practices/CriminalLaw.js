@@ -1,16 +1,29 @@
 import React, { Fragment } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const criminalLaw = {
     title: 'Criminal Law',
-    heading: <h3>What to Expect in a Criminal Case</h3>,
+    heading: <h5>What to Expect in a Criminal Case</h5>,
     body: (
         <Fragment>
             <p>
-                If you have been charged with a crime, you may be feeling overwhelmed and unsure of what to expect. The first step is to seek out the advice of a qualified criminal defense attorney. A good attorney can help you navigate the legal process and ensure that your rights are protected.
+                In the face of criminal charges, the stakes are profoundly high, our goal is to help guide you through this process. 
+                Bagga & Associates provides a robust and meticulous defense representation across the full spectrum of criminal offenses, 
+                from minor infractions to serious felonies. Our commitment is to protect your rights, ensure fair legal process, and strive for 
+                the best possible outcome—whether through negotiation, dismissal, or aggressive litigation in court. We offer clear guidance and 
+                unwavering support during this challenging time, focusing on strategic defense tailored to the unique facts of your case.
             </p>
-            <p>
-                Depending on the severity of the charges, you may be facing a trial, and if convicted, a range of penalties from fines and community service to imprisonment. It is important to have an experienced attorney who can help you build a strong defense and work towards the best possible outcome.
-            </p>
+            
+            <b>Initial Consultation Documents</b>
+            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                <li>Photo Identification</li>
+                <li>Prior Criminal Record (if applicable)</li>
+                <li>Charging Document</li>
+                <li>Appearance Notice/Promise to Appear (PTA)</li>
+                <li>Recognizance</li>
+                <li>Police Incident/Case Number</li>
+                <li>Subpoenas or Warrants</li>
+            </ul>
         </Fragment>
     ),
 

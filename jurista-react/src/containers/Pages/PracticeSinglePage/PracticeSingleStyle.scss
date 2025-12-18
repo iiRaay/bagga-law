@@ -1,5 +1,7 @@
+@import '../../../css/colors.scss';
 .singleArea{
     padding: 100px 0px;
+    background-color: color(blblue);
     .pr25{
         padding-right: 25px;
         @media (max-width:768px) {

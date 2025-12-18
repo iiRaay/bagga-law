@@ -24,20 +24,20 @@ class App extends Component {
         <BrowserRouter>
           <ToastContainer autoClose={2500} position="top-center" />
           <Routes>
-            <Route exact path="/" element={<HomePageOne />} />
-            <Route exact path="about" element={<AboutPageView />} />
-            <Route exact path="frequently-asked" element={<FaqPageView />} />
-            <Route exact path="practice" element={<PracticePageView />} />
-            <Route exact path="practice-details/:id" element={<PracticeSinglePage />}/>
-            <Route exact path="case-stadies" element={<PortfolioPage />} />
-            <Route exact path="case-stadies-details" element={<SinglePortfolioPage />}/> {/* typo? */}
-            <Route exact path="attorneys" element={<TeamPage />} />
-            <Route exact path="attorneys-single" element={<SingleTeamPage />} />
-            <Route exact path="contact" element={<ContactPageView />} />
-            <Route exact path="cases" element={<CasesPage />} />
-            <Route exact path="blog-left" element={<BlogLeftPage />} />
-            <Route exact path="blog-right" element={<BlogRightPage />} />
-            <Route exact path="blog-fullwidth" element={<BlogFullWidth />} />
+            <Route path="/" element={<HomePageOne />} />
+            <Route path="about" element={<AboutPageView />} />
+            <Route path="frequently-asked" element={<FaqPageView />} />
+            <Route path="practice" element={<PracticePageView />} />
+            <Route path="practice-details/:id" element={<PracticeSinglePage />}/>
+            <Route path="case-stadies" element={<PortfolioPage />} />
+            <Route path="case-stadies-details" element={<SinglePortfolioPage />}/> {/* typo? */}
+            <Route path="attorneys" element={<TeamPage />} />
+            <Route path="attorneys-single" element={<SingleTeamPage />} />
+            <Route path="contact" element={<ContactPageView />} />
+            <Route path="cases" element={<CasesPage />} />
+            <Route path="blog-left" element={<BlogLeftPage />} />
+            <Route path="blog-right" element={<BlogRightPage />} />
+            <Route path="blog-fullwidth" element={<BlogFullWidth />} />
           </Routes>
         </BrowserRouter>
       </Fragment>

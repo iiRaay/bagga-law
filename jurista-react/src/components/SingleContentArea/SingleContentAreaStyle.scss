@@ -1,0 +1,107 @@
+@import '../../css/colors.scss';
+
+.banner {
+    background-color: color(bldark);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+    justify-content: center;
+
+    h2 {
+        font-family: sans-serif;
+        font-weight: 300;
+        font-size: 50px;
+        color: color(blgold);
+        padding: 1rem;
+        text-align: center;
+    }
+}
+.singleContentArea{
+    .singleContentImg{
+        margin-bottom: 50px;
+        img{
+            width: 100%;
+        }
+    }
+    .singleContentWrap{
+        .singleContentHeading{
+            background-color: color(blprimary);
+            padding-left: 10px;
+        }
+
+        .singleContentBody{
+            background-color: color(bltextbox);
+            padding: 0.5rem 1rem 2rem 1rem;
+        }
+        h3{
+            font-size: 36px;
+            margin-bottom: 25px;
+        }
+        h5{
+            color: black;
+            font-size: 22px;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 40px;
+            margin-bottom: 30px;
+            @media (max-width:576px) {
+                line-height: 30px;
+                font-size: 18px;
+            }
+        }
+        p{
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 35px;
+            @media (max-width:576px) {
+                font-size: 14px;
+            }
+        }
+        .avatarWrap{
+            padding-top: 30px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translate(-50%, -50%);
+                width: 80%;
+                height: 4px;
+                border-radius: 1px;
+                background: color(bldark);
+                box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            }
+
+            img{
+                width: 100%;
+                @media (max-width:576px) {
+                    margin-bottom: 30px;
+                }
+            }
+            h4{
+                font-size: 24px;
+                margin-bottom: 20px;
+                background-color: color(blprimary);
+                padding: 1rem;
+    
+            }
+            ul{
+                 background-color: color(bltextbox);
+                 padding: 0.5rem 1rem 2rem 1rem;
+                li{
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                   
+                    &::before{
+                        content: "\f046";
+                        margin-right: 15px;
+                        font-family: 'fontawesome';
+                        color: color(blgold);
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

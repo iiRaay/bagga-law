@@ -1,18 +1,15 @@
 import React, { Fragment } from 'react'
-
 import MainHeader from '../../../components/MainHeader/MainHeader'
 import Breadcumb from '../../../components/Breadcumb'
-import NewsLetter from '../../../components/Newsletter'
 import CetagorySidebarView from '../../../components/CetagorySidebar/CatagorySideBarView'
 import FooterArea from '../../../components/FooterArea'
-import BannerSidebar from '../../../components/BannerSidebar'
-import SingleContentArea from '../../../components/SingleContentArea'
+import BannerSidebar from '../../../components/BannerSidebar/BannerSidebarView'
+import SingleContentArea from '../../../components/SingleContentArea/SingleContentAreaView'
 import { useParams } from 'react-router-dom';
 
 // images
 import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg'
-import banner from '../../../images/about/black_scale.jpg'
-import single from '../../../images/practice/3.jpg'
+import banner from '../../../images/contact/Contact_us_pic.png'
 import practiceOptions from '../../../constants/practices/practiceSinglePage'
 import './PracticeSingleStyle.scss'
 
@@ -27,6 +24,7 @@ const breadcumbMenu = [
 const PracticeSinglePage = () => {
     const { id } = useParams();
     const practiceId = parseInt(id) || 1;
+    
     return (
         <Fragment>
             <header className="headerArea">
@@ -34,7 +32,7 @@ const PracticeSinglePage = () => {
             </header>
             <Breadcumb
                 className="breadcumbArea"
-                title="Practice Single Area"
+                title="Expertise"
                 breadcumbMenu={breadcumbMenu}
                 background={breadcumb}
             />
@@ -55,11 +53,12 @@ const PracticeSinglePage = () => {
                         </div>
                         {practiceOptions.filter
                             (option => option.id === practiceId)
-                            .map(option => (
-                                <div className="col-lg-8">
+                            .map((option, index) => (
+                                <div key={index} className="col-lg-8">
                                     <SingleContentArea
                                         className="singleContentArea"
                                         title={option.title}
+                                        image={option.image}
                                         heading={option.heading}
                                         body={option.body}
                                         avatartitle={option.avatartitle}

@@ -43,34 +43,34 @@ const MainHeader = props => {
                         <div className="row">
                             <div className="col-lg-3 col-md-10 col-sm-6 col-8">
                                 <div className="logo">
-                                    <NavLink exact to="/">
+                                    <NavLink to="/">
                                         <img src={require('../../images/logo/ba-logo-full-side.png')} alt="" />
                                     </NavLink>
                                 </div>
                             </div>
                             <div className={"col-lg-8 responsiveWrapper"}>
                                 <ul className="mainMenuWrap">
-                                    <li><NavLink exact to="/">Home</NavLink></li>
-                                    <li><NavLink exact to="/attorneys">Our Team</NavLink></li>
+                                    <li><NavLink to="/">Home</NavLink></li>
+                                    <li><NavLink to="/attorneys">Our Team</NavLink></li>
                                     <li>
-                                        <NavLink exact to="/practice">Expertise</NavLink>
+                                        <NavLink to="/practice">Expertise</NavLink>
                                         <ul className="subMenu">
-                                            <li><NavLink exact to='/frequently-asked'>FAQ</NavLink></li>
-                                            <li><NavLink exact to='/practice-details/1'>Criminal Law</NavLink></li>
-                                            <li><NavLink exact to='/practice-details/2'>Personal Injury</NavLink></li>
-                                            <li><NavLink exact to='/practice-details/3'>Family Law</NavLink></li>
-                                            <li><NavLink exact to='/practice-details/4'>Immigration Law</NavLink></li>
-                                            <li><NavLink exact to='/practice-details/5'>Real Estate Law</NavLink></li>
-                                            <li><NavLink exact to='/practice-details/6'>Business Law</NavLink></li>
+                                            <li><NavLink to='/frequently-asked'>FAQ</NavLink></li>
+                                            <li><NavLink to='/practice-details/1'>Criminal Law</NavLink></li>
+                                            <li><NavLink to='/practice-details/2'>Personal Injury</NavLink></li>
+                                            <li><NavLink to='/practice-details/3'>Family Law</NavLink></li>
+                                            <li><NavLink to='/practice-details/4'>Immigration Law</NavLink></li>
+                                            <li><NavLink to='/practice-details/5'>Real Estate Law</NavLink></li>
+                                            <li><NavLink to='/practice-details/6'>Business Law</NavLink></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <NavLink exact to="/case-stadies">Client Resources</NavLink>
+                                        <NavLink to="/case-stadies">Client Resources</NavLink>
                                         <ul className="subMenu">
-                                             <li><NavLink exact to='/cases'>Cases</NavLink></li>
+                                             <li><NavLink to='/cases'>Cases</NavLink></li>
                                         </ul>
                                     </li>
-                                    <li><NavLink exact to="/contact">Contact Us</NavLink></li>
+                                    <li><NavLink to="/contact">Contact Us</NavLink></li>
                                 </ul>
                             </div>
                             <div className="col-lg-1 col-md-2 col-sm-6 col-4">

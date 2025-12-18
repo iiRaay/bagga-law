@@ -1,0 +1,42 @@
+@import '../../css/colors.scss';
+.bannerWrapper{
+    height: 320px;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+    background: no-repeat center center / cover;
+    &::before{
+        position: absolute;
+        content: "";
+        background: rgba(0, 0, 0, .25);
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    h3{
+        font-size: 36px;
+        color: color(bltextbox);
+        line-height: 50px;
+        padding-bottom: 25px;
+        margin-bottom: 0;
+        @media (max-width:1024px) {
+            font-size: 24px;
+            line-height: 40px;
+        }
+        @media (max-width:576px) {
+            font-size: 24px;
+            line-height: 40px;
+        }
+        span{
+            font-size: 60px;
+        }
+    }
+}

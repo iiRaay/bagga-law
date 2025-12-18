@@ -5,11 +5,22 @@ const businessLaw = {
     body: (
         <Fragment>
             <p>
-                Whether you're starting a new business or managing an established one, understanding business law is crucial to your success. A knowledgeable business attorney can help you navigate the legal landscape, from contracts and compliance to disputes and litigation.
+                From startups to established corporations, successful business operations require a solid legal foundation. 
+                Bagga & Associates provides proactive and strategic legal advice to help businesses thrive while mitigating risk. 
+                We offer expertise in business formation and structuring, contract drafting and review, corporate governance, shareholder agreements, 
+                mergers and acquisitions, and commercial litigation. We act as a trusted legal partner, offering practical solutions that align with your 
+                commercial objectives and support sustainable growth.
             </p>
-            <p>
-                Your attorney can provide valuable guidance on structuring your business, protecting your assets, and minimizing risks. With the right legal support, you can focus on achieving your business goals with confidence.
-            </p>
+
+            <b>Initial Consultation Documents</b>
+            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                <li>Corporate Registration Documents</li>
+                <li>Shareholder/Director/Officer List</li>
+                <li>Financial Statements</li>
+                <li>Business Plan</li>
+                <li>Shareholder or Partnership Agreements.</li>
+                <li>Business Lease Agreement.</li>
+            </ul>
         </Fragment>
     ),
 

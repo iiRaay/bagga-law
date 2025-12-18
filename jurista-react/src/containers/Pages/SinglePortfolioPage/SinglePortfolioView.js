@@ -6,7 +6,7 @@ import NewsLetter from '../../../components/Newsletter'
 import CetagorySidebarView from '../../../components/CetagorySidebar/CatagorySideBarView'
 import FooterArea from '../../../components/FooterArea'
 import SearchSidebar from '../../../components/SearchSidebar'
-import SingleContentArea from '../../../components/SingleContentArea'
+import SingleContentArea from '../../../components/SingleContentArea/SingleContentAreaView'
 import RecentPosts from '../../../components/RecentPosts'
 import Portfolio from '../../../components/Portfolio'
 // images

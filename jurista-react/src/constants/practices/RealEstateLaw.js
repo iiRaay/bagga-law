@@ -5,11 +5,25 @@ const realEstateLaw = {
     body: (
         <Fragment>
             <p>
-                Real estate transactions can involve significant financial and legal complexities. Whether you are buying, selling, or leasing property, it is important to have an experienced real estate attorney to protect your interests.
+                Whether you are buying your first home, selling a commercial property, or refinancing, a smooth transaction process is paramount. 
+                Bagga & Associates offers comprehensive legal support for all residential and commercial real estate transactions. Our services cover everything 
+                from drafting and reviewing agreements of purchase, to conducting thorough due diligence and managing the final closing process of a sale.
+                We ensure all legal requirements are met, potential disputes are avoided, and your investment is protected. 
+                Our guidance begins from the initial offer, all the way to the final transfer of the title.
             </p>
-            <p>
-                A real estate attorney can assist with contract negotiations, title searches, and closing processes, ensuring that your transaction proceeds smoothly. With professional legal guidance, you can navigate the real estate market with confidence.
-            </p>
+            <b>Initial Consultation Documents</b>
+            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                <li>The Agreement of Purchase and Sale (APS)</li>
+                <li>Photo ID for all purchasers/sellers.</li>
+                <li>Property Address and Legal Description.</li>
+                <li>Sponsor/Employer Details</li>
+            </ul>
+
+            <b>For Sellers Only</b>
+            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                <li>Existing mortgage statement</li>
+                <li>Rental agreements</li>
+            </ul>
         </Fragment>
     ),
 

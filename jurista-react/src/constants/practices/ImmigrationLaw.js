@@ -6,11 +6,21 @@ const immigrationLaw = {
     body: (
         <Fragment>
             <p>
-                Navigating immigration laws can be complex and challenging. Whether you are seeking a visa, facing deportation, or pursuing citizenship, it is crucial to have an experienced immigration attorney on your side.
+                Navigating the complexities of immigration is a daunting process. 
+                Bagga & Associates aims to make that process simpler for you. Our firm provides dedicated legal assistance to individuals, 
+                families, and businesses seeking to live, work, or establish residency here within Canada. We assist with applications for permanent residence, 
+                various visa categories(work, student, and visitor), citizenship applications, and family sponsorship. We stay up to date on evolving immigration 
+                policies to ensure your application is prepared accurately and strategically, in order to minimize delays and maximize the chances of a successful 
+                migration.
             </p>
-            <p>
-                An immigration attorney can help you understand your rights, complete necessary paperwork, and represent you in court. With professional legal guidance, you can approach your immigration case with confidence.
-            </p>
+
+            <b>Initial Consultation Documents</b>
+            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                <li>Valid Passport(s)</li>
+                <li>Visa/Permit's </li>
+                <li>Education and Employment Records</li>
+                <li>Sponsor/Employer Details</li>
+            </ul>
         </Fragment>
     ),
 

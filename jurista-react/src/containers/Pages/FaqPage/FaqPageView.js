@@ -4,6 +4,7 @@ import MainHeader from '../../../components/MainHeader/MainHeader'
 import Breadcumb from '../../../components/Breadcumb'
 import FooterArea from '../../../components/FooterArea'
 import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg' 
+import CetagorySidebarView from '../../../components/CetagorySidebar/CatagorySideBarView'
 import './FaqPageStyles.scss'
 import { faq } from './FaqData' 
 const breadcumbMenu = [

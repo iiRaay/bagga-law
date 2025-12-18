@@ -3,11 +3,11 @@ import React, { Fragment } from 'react'
 import MainHeader from '../../../components/MainHeader/MainHeader'
 import Breadcumb from '../../../components/Breadcumb'
 import NewsLetter from '../../../components/Newsletter'
-import CetagorySidebar from '../../../components/CetagorySidebar'
+import CetagorySidebarView from '../../../components/CetagorySidebar/CatagorySideBarView'
 import FooterArea from '../../../components/FooterArea'
 import BannerSidebar from '../../../components/BannerSidebar'
 import SingleContentArea from '../../../components/SingleContentArea'
-import { useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 // images
 import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg'
@@ -24,11 +24,9 @@ const breadcumbMenu = [
 ]
 
 
-
-
 const PracticeSinglePage = () => {
-    const location = useLocation();
-    const id = location.state.id?? 0;
+    const { id } = useParams();
+    const practiceId = parseInt(id) || 1;
     return (
         <Fragment>
             <header className="headerArea">
@@ -49,14 +47,14 @@ const PracticeSinglePage = () => {
                                     image={banner}
                                     className="bannerWrapper"
                                 />
-                                <CetagorySidebar
+                                <CetagorySidebarView
                                     title="Category"
                                     className="cetagoryWrap"
                                 />
                             </aside>
                         </div>
                         {practiceOptions.filter
-                            (option => option.id === id)
+                            (option => option.id === practiceId)
                             .map(option => (
                                 <div className="col-lg-8">
                                     <SingleContentArea

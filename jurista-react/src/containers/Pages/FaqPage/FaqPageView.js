@@ -3,28 +3,30 @@ import MainHeader from '../../../components/MainHeader/MainHeader'
 
 import Breadcumb from '../../../components/Breadcumb'
 import FooterArea from '../../../components/FooterArea'
-import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg'
-import placeholderImage1 from '../../../images/slider/UpdatedBanner-6-8-2025.jpeg'
-import placeholderImage2 from '../../../images/logo/ba-logo-cropped.png'      
-import './FAQPageStyles.scss'
-import { FAQData } from './FAQData' 
+import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg' 
+import './FaqPageStyles.scss'
+import { faq } from './FaqData' 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
-    { name: 'Cases', },
+    { name: 'Pages', route: '/pages' },
+    { name: 'FAQ', },
 ]
-
-//Todo: Probably move this to a service/controller before implementing
-const apiEndpoint = "https://api.canlii.org/en/v1/cases/";
-const languageOption = "en";
 
 
 const FaqPageView = () => {
     const [faqData, setfaqData] = useState(null);
+    const [expandedOpen, setExpandedOpen] = useState([]);
 
     useEffect(() => {
-        if(FAQData.length == 0) return;
-        setfaqData(FAQData);
+        if(faq.length == 0) return;
+        setfaqData(faq);
     }, [])
+
+    const toggleExpand = (index) => {
+        setExpandedOpen(prev => (
+            prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
+        ));
+    }
 
     return(
         <Fragment>
@@ -33,29 +35,41 @@ const FaqPageView = () => {
             </header>
             <Breadcumb
                 className="breadcumbArea"
-                title="Cases"
+                title="Frequently Asked Questions"
                 breadcumbMenu={breadcumbMenu}
                 background={breadcumb}
             />
 
-            <div className='container'>
+            <div className='maincontainer'>
                 <div className='banner'>
                     <h2>FAQ</h2>
                 </div>
-                <div className='content'>
+                <div className='container'>
                     {faqData && faqData.map((faqItem, itemIndex) => (
-                        <div>
+                        <div className='faq-category' key={itemIndex}>
                             <h3>{faqItem.category}</h3>
-                                {faqItem.data.map((faq, questionIndex) => (
-                                    <div key={questionIndex}> {/* Future refernce, will use the question index to determine which one to add to expanded */}
-                                        <div className='question'>
-                                            <h4>{faq.question}</h4>
+                                {faqItem.data.map((faq, questionIndex) => {
+                                    const uniqueIndex = `${itemIndex}-${questionIndex}`;
+                                    const isExpanded = expandedOpen.includes(uniqueIndex);
+                                    return (
+                                        <div key={questionIndex} className='faq-item'>
+                                            <div 
+                                                className='question'
+                                                onClick={() => toggleExpand(uniqueIndex)}
+                                                style={{ cursor: 'pointer' }}
+                                            >
+                                                <h4>{faq.question}</h4>
+                                                <span className={`expand-icon ${isExpanded ? 'expanded' : ''}`} aria-hidden="true"></span>
+                                            </div>
+                                            {isExpanded && (
+                                                <div className='answer'>
+                                                    <p>{faq.answer}</p>
+                                                </div>
+                                            )}
                                         </div>
-                                        <div className='answer'>
-                                            <p>{faq.answer}</p>
-                                        </div>
-                                    </div>
-                                ))}
+                                    );
+                                })}
+                            <div className='space'></div>
                         </div>
                     ))}
                 </div>

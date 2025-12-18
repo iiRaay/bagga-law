@@ -22,7 +22,7 @@ const ServiceArea = ({ className, title, subTitle, services }) => {
                                 </div>
                                 <div className="serviceContent">
                                     <h3 style={{color: "inherit"}}>
-                                        <NavLink exact to='/practice-details' state={{ id: service.linkId}}>
+                                        <NavLink exact to={`/practice-details/${service.linkId}`}>
                                             {service.title}
                                         </NavLink>
                                     </h3>

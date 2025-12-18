@@ -6,15 +6,15 @@ import AboutPageView from "../Pages/AboutPage/AboutPageView";
 import PracticePageView from "../Pages/PracticePage/PracticePageView";
 import PracticeSinglePage from "../Pages/PracticeSinglePage/PracticeSinglePageView";
 import PortfolioPage from "../Pages/PortfolioPage";
-import SinglePortfolioPage from "../Pages/SinglePortfolioPage";
+import SinglePortfolioPage from "../Pages/SinglePortfolioPage/SinglePortfolioView";
 import TeamPage from "../Pages/TeamPage";
 import SingleTeamPage from "../Pages/SingleTeamPage";
 import ContactPageView from "../Pages/ContactPage/ContactPageView";
-import BlogLeftPage from "../Pages/BlogLeftPage";
-import BlogRightPage from "../Pages/BlogRightPage";
+import BlogLeftPage from "../Pages/BlogLeftPage/BlogLeftView";
+import BlogRightPage from "../Pages/BlogRightPage/BlogRightView";
 import BlogFullWidth from "../Pages/BlogFullWidth";
 import CasesPage from "../Pages/CasesPage/CasesPageView";
-import FaqPageView from "../Pages/FAQPage/FAQPageView";
+import FaqPageView from "../Pages/FaqPage/FaqPageView";
 import "./App.css";
 
 class App extends Component {
@@ -28,7 +28,7 @@ class App extends Component {
             <Route exact path="about" element={<AboutPageView />} />
             <Route exact path="frequently-asked" element={<FaqPageView />} />
             <Route exact path="practice" element={<PracticePageView />} />
-            <Route exact path="practice-details" element={<PracticeSinglePage />}/>
+            <Route exact path="practice-details/:id" element={<PracticeSinglePage />}/>
             <Route exact path="case-stadies" element={<PortfolioPage />} />
             <Route exact path="case-stadies-details" element={<SinglePortfolioPage />}/> {/* typo? */}
             <Route exact path="attorneys" element={<TeamPage />} />

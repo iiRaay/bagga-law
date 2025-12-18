@@ -1,0 +1,16 @@
+$colors: (
+  bldark: #272c3f,
+  blblue: #dbe2fc,
+  blprimary: #aab9f3,
+  blaltblue: #c2cefb,
+  blgold: #967D3C,
+  bltextbox:#fefefe
+);
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @return #aab9f3; // default color
+}

@@ -1,0 +1,165 @@
+
+@import '../../../css/colors.scss';
+    
+.casesPageContainer{
+    background-color: color(blblue);
+    min-height: 800px;
+    width: 100%;
+    height: 100%;
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 20%;
+     
+        margin-left: 4rem;
+        margin-right: 4rem;
+        gap: 5rem;
+        
+        //////////////////////////////////////////////////// Year Selection Stuff ////////////////////////////////////////////////
+        span{
+            display: block;
+        }
+
+        .col-yearList {
+            margin: 2rem;
+            background-color: color(blaltblue);
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            position: relative;
+            
+        }
+
+        .col-yearList ul{
+            width: 100%;
+            list-style: none;
+            margin: 0;
+            max-height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            gap: 0.25rem;
+        }
+
+
+        .col-yearList li{
+            width: 100%;
+            box-sizing: border-box;
+            text-align: left;
+            background: transparent;
+            padding: 0.75rem;
+            border-bottom: 1px solid color(blprimary);
+            margin: 0; 
+        }
+
+        .col-yearList li a{
+            display: block;
+            width: 100%;
+            color: color(bldark)
+            
+        }
+
+        .col-yearList .yearItem{
+            width: 100%; 
+            color: color(blgold);
+            background-color: color(bldark);
+            position: relative;
+            z-index: 2;
+            font-weight: 600;
+            padding: 0.75rem;
+            margin-bottom: 0.6rem; 
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        // Arrow under Year
+        .col-yearList .yearItem::after{
+            content: "";
+            position: absolute;
+            left: 15%;
+            transform: translateX(-50%);
+            bottom: -12px; 
+            width: 0;
+            height: 0;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-top: 12px solid color(bldark);
+            z-index: 1;
+        }
+
+        // Selected year 
+        .col-yearList li.active{
+            background: #aab9f3;
+            color: #fff;
+            z-index: 2;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+        }
+
+        .col-yearList li.active a{
+            color: color(bldark);
+            font-weight: bold;
+        }
+          .col-yearList-yearList ul li {
+            font-size: 35px;
+        }
+
+        //////////////////////////////////////////////////// Cases Content ////////////////////////////////////////////////
+        
+        .col-caseData{
+            background-color: color(blblue);
+            display: flex;
+            width:100%;
+            max-width: 100%;
+            flex-direction: column;
+            justify-content: stretch;
+            vertical-align: top;
+            padding: 1rem;
+        }
+
+        // Selected year
+        .col-caseData h2{
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            margin: 1rem;
+            color: black;
+;        }
+        
+        .caseDataItem{
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+            padding: 2rem;
+            background-color: color(bltextbox);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+        }
+
+        .col-caseData .caseDataSummary{
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+
+        .col-caseData .caseDataTitle h3{
+            color: color(bldark);
+            font-family: sans-serif;
+            font-size: 40px;
+            margin-bottom: 1rem;
+            vertical-align: top;
+            align-self: stretch;
+        }
+
+        .col-caseData .caseDataTitle :hover{
+            color: color(blprimary);
+        }
+
+        .caseDataItem .caseDataLink{
+            font-size: 24px;
+            text-decoration: underline;
+            align-self: flex-end;
+            margin-top: auto;
+        }
+    }
+    
+  
+
+
+}

@@ -13,7 +13,7 @@ import ContactPage from "../Pages/ContactPage";
 import BlogLeftPage from "../Pages/BlogLeftPage";
 import BlogRightPage from "../Pages/BlogRightPage";
 import BlogFullWidth from "../Pages/BlogFullWidth";
-import CasesPage from "../Pages/CasesPage";
+import CasesPage from "../Pages/CasesPage/CasesPageView";
 import "./App.css";
 
 class App extends Component {
@@ -28,7 +28,7 @@ class App extends Component {
             <Route exact path="practice" element={<PracticePage />} />
             <Route exact path="practice-details" element={<PracticeSinglePage />}/>
             <Route exact path="case-stadies" element={<PortfolioPage />} />
-             <Route exact path="case-stadies-details" element={<SinglePortfolioPage />}/> {/* typo? */}
+            <Route exact path="case-stadies-details" element={<SinglePortfolioPage />}/> {/* typo? */}
             <Route exact path="attorneys" element={<TeamPage />} />
             <Route exact path="attorneys-single" element={<SingleTeamPage />} />
             <Route exact path="contact" element={<ContactPage />} />

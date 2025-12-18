@@ -2,21 +2,17 @@ import React, { Fragment, useState, useEffect } from 'react'
 import HeaderBotton from '../../../components/HeaderBottom'
 import HeaderTop from '../../../components/HeaderTop'
 import Breadcumb from '../../../components/Breadcumb'
-import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
-import Form from '../../../components/Form'
-// images
 import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg'
 import './CasesPageStyles.scss'
 import { caseDataByYear } from './StaticCaseData'
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
-    { name: 'Contact', },
+    { name: 'Cases', },
 ]
 
+//Todo: Probably move this to a service/controller before implementing
 const apiEndpoint = "https://api.canlii.org/en/v1/cases/";
-
-
 const languageOption = "en";
 
 
@@ -26,16 +22,16 @@ const CasesPage = () => {
     const [caseData, setCaseData] = useState(null);
 
     useEffect(() => {
-
+        //Todo: Talk to gio about how we want this to be ordered
+        // Can - Grab as much data as we can? (API limitations?)
+        // Can - Static data for now and forget about API
+        // Can - Grab data one year at a time (probably slower loading? Maybe not)
+        // Can - Grab data for all years at once (probably faster loading? Maybe not - can set up to do last 5 years)
         if(caseDataByYear.length == 0) return;
         const years = Object.keys(caseDataByYear).map(year => parseInt(year)).sort((a, b) => b - a);
         setListOfYears(years);
         setSelectedYear(years[0]);
         setCaseData(caseDataByYear[years[0]]);
-        for(var i=0; i< years.length; i++){
-            console.log(i);
-            console.log("Year: ", years[i]);
-        }
     }, [])
 
 
@@ -65,9 +61,12 @@ const CasesPage = () => {
             />
 
             <div className="casesPageContainer">
+                <div className="casesPageBanner">
+                    <h2>Cases For {selectedYear}</h2>
+                </div>
                 <div className="grid-container">
                     <div className='col-caseData'>
-                        <h2>Cases For {selectedYear}</h2>
+                        
                        
                         {caseData && caseData.map((caseItem, index) => (
                             <div className="caseDataItem" key={index}>
@@ -78,8 +77,6 @@ const CasesPage = () => {
                                 <a target="_blank" className='caseDataLink' href={caseItem.url}>Read More ...</a>
                             </div>
                         ))}
-            
-                        
                     </div>
                     <div className='col-yearList'>
                         <ul>
@@ -93,8 +90,6 @@ const CasesPage = () => {
                             ))}
                         </ul>   
                     </div>
-
-                    
                 </div>
             </div>
             <FooterArea />

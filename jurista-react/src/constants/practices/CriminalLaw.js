@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const criminalLaw = {
     title: 'Criminal Law',
-    heading: <h5>What to Expect in a Criminal Case</h5>,
+    heading: <h3>What to Expect in a Criminal Case</h3>,
     body: (
         <Fragment>
             <p>
@@ -15,6 +15,7 @@ const criminalLaw = {
             </p>
             
             <b>Initial Consultation Documents</b>
+            
             <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
                 <li>Photo Identification</li>
                 <li>Prior Criminal Record (if applicable)</li>

@@ -18,7 +18,7 @@ const realEstateLaw = {
                 <li>Property Address and Legal Description.</li>
                 <li>Sponsor/Employer Details</li>
             </ul>
-
+            <p></p>
             <b>For Sellers Only</b>
             <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
                 <li>Existing mortgage statement</li>

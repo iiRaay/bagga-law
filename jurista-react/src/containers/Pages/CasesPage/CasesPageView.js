@@ -7,7 +7,7 @@ import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg'
 import placeholderImage1 from '../../../images/slider/UpdatedBanner-6-8-2025.jpeg'
 import placeholderImage2 from '../../../images/logo/ba-logo-cropped.png'      
 import './CasesPageStyles.scss'
-import { caseDataByYear } from './StaticCaseData'
+import { caseDataByYear } from './CaseData'
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
     { name: 'Cases', },

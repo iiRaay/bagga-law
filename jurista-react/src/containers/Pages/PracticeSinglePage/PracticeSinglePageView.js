@@ -28,7 +28,7 @@ const breadcumbMenu = [
 
 const PracticeSinglePage = () => {
     const location = useLocation();
-    const id = location.state.id?? 1;
+    const id = location.state.id?? 0;
     return (
         <Fragment>
             <header className="headerArea">

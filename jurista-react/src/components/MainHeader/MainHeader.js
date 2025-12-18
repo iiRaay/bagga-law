@@ -53,8 +53,9 @@ const MainHeader = props => {
                                     <li><NavLink exact to="/">Home</NavLink></li>
                                     <li><NavLink exact to="/attorneys">Our Team</NavLink></li>
                                     <li>
-                                        <NavLink exact to="/practice">Expertise</NavLink>
+                                        <NavLink exact to="/practice">General</NavLink>
                                         <ul className="subMenu">
+                                            <li><NavLink exact to='/frequently-asked'>FAQ</NavLink></li>
                                             <li><NavLink exact to='/practice-details' state={{ id: 1}}>Criminal Law</NavLink></li>
                                             <li><NavLink exact to='/practice-details' state={{ id: 2}}>Personal Injury</NavLink></li>
                                             <li><NavLink exact to='/practice-details' state={{ id: 3}}>Family Law</NavLink></li>

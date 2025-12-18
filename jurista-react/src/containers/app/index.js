@@ -14,6 +14,7 @@ import BlogLeftPage from "../Pages/BlogLeftPage";
 import BlogRightPage from "../Pages/BlogRightPage";
 import BlogFullWidth from "../Pages/BlogFullWidth";
 import CasesPage from "../Pages/CasesPage/CasesPageView";
+import FaqPageView from "../Pages/FAQPage/FAQPageView";
 import "./App.css";
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
           <Routes>
             <Route exact path="/" element={<HomePageOne />} />
             <Route exact path="about" element={<AboutPageView />} />
+            <Route exact path="frequently-asked" element={<FaqPageView />} />
             <Route exact path="practice" element={<PracticePageView />} />
             <Route exact path="practice-details" element={<PracticeSinglePage />}/>
             <Route exact path="case-stadies" element={<PortfolioPage />} />

@@ -3,12 +3,8 @@ export const faq = [
         category: "General",
         data: [
             {
-                question: "How Quickly can I expect to book an initial consultation?",
-                answer: "We strive to offer consultations within 24 to 48 hours of your initial contact."
-            },
-            {
-                question: "What are your business hours?",
-                answer: "Our office is open Monday to Friday, 9 AM to 5 PM. We also offer appointments outside these hours by request."
+                question: "What are your office hours?",
+                answer: "Our office is open Monday to Friday, 8:30 AM to 4:30 PM. We are closed on weekends and public holidays. Appointments outside of these hours may be accommodated by special request."
             },
             {
                 question: "Do you offer virtual consultations?",

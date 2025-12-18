@@ -9,7 +9,7 @@ import './FaqPageStyles.scss'
 import { faq } from './FaqData' 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
-    { name: 'ClientResources', route: '/pages' },
+    { name: 'Client Resources', route: '/case-studies' },
     { name: 'FAQ', },
 ]
 

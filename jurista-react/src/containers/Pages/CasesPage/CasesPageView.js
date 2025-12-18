@@ -10,6 +10,7 @@ import './CasesPageStyles.scss'
 import { caseDataByYear } from './CaseData'
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
+    { name: 'Client Resources', route: '/case-studies' },
     { name: 'Cases', },
 ]
 

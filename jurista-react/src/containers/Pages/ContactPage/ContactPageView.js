@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
-import HeaderBotton from '../../../components/HeaderBottom'
-import HeaderTop from '../../../components/HeaderTop'
+import MainHeader from '../../../components/MainHeader/MainHeader'
 import Breadcumb from '../../../components/Breadcumb'
 import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
@@ -8,19 +7,18 @@ import Form from '../../../components/Form'
 // images
 import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg'
 
-import './style.scss'
+import './ContactPageStyle.scss'
 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
     { name: 'Contact', },
 ]
 
-const ContactPage = () => {
+const ContactPageView = () => {
     return (
         <Fragment>
             <header className="headerArea">
-                <HeaderTop className="headerTop" />
-                <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
+                <MainHeader className="headerTop" />
             </header>
             <Breadcumb
                 className="breadcumbArea"
@@ -61,4 +59,4 @@ const ContactPage = () => {
         </Fragment>
     )
 }
-export default ContactPage
+export default ContactPageView

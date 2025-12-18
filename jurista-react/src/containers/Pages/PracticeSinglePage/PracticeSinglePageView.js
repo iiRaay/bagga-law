@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import HeaderBotton from '../../../components/HeaderBottom'
-import HeaderTop from '../../../components/HeaderTop'
+
+import MainHeader from '../../../components/MainHeader/MainHeader'
 import Breadcumb from '../../../components/Breadcumb'
 import NewsLetter from '../../../components/Newsletter'
 import CetagorySidebar from '../../../components/CetagorySidebar'
@@ -14,7 +14,7 @@ import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg'
 import banner from '../../../images/about/black_scale.jpg'
 import single from '../../../images/practice/3.jpg'
 import practiceOptions from '../../../constants/practices/practiceSinglePage'
-import './style.scss'
+import './PracticeSingleStyle.scss'
 
 
 const breadcumbMenu = [
@@ -28,12 +28,11 @@ const breadcumbMenu = [
 
 const PracticeSinglePage = () => {
     const location = useLocation();
-    const id = location.state.id;
+    const id = location.state.id?? 1;
     return (
         <Fragment>
             <header className="headerArea">
-                <HeaderTop className="headerTop" />
-                <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
+                <MainHeader className="headerTop" />
             </header>
             <Breadcumb
                 className="breadcumbArea"

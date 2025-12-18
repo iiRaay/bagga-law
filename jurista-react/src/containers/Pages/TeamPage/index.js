@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import HeaderBotton from '../../../components/HeaderBottom'
-import HeaderTop from '../../../components/HeaderTop'
+
+import MainHeader from '../../../components/MainHeader/MainHeader'
 import Breadcumb from '../../../components/Breadcumb'
 import TeamMember from '../../../components/TeamMember'
 import NewsLetter from '../../../components/Newsletter'
@@ -19,8 +19,7 @@ const TeamPage = () => {
     return (
         <Fragment>
             <header className="headerArea">
-                <HeaderTop className="headerTop" />
-                <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
+                <MainHeader className="headerTop" />
             </header>
             <Breadcumb
                 className="breadcumbArea"

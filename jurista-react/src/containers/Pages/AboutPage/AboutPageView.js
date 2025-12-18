@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
-import HeaderBotton from "../../../components/HeaderBottom";
-import HeaderTop from "../../../components/HeaderTop";
+import MainHeader from "../../../components/MainHeader/MainHeader";
 import Breadcumb from "../../../components/Breadcumb";
 import Service from "../../../components/Service";
 import About from "../../../components/About";
@@ -14,17 +13,16 @@ import Map from "../../../components/Map";
 import about from "../../../images/about/2.jpg";
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import services from "../../../constants/services";
-import "./style.scss";
+import "./AboutPageStyle.scss";
 import aboutText from "../../../constants/aboutUs";
 
 const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "About us" }];
 
-const AboutPage = () => {
+const AboutPageView = () => {
   return (
     <Fragment>
       <header className="headerArea">
-        <HeaderTop className="headerTop" />
-        <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
+        <MainHeader className="headerTop" />
       </header>
       <Breadcumb
         className="breadcumbArea"
@@ -64,4 +62,4 @@ const AboutPage = () => {
     </Fragment>
   );
 };
-export default AboutPage;
+export default AboutPageView;

@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
-import HeaderBotton from "../../../components/HeaderBottom";
-import HeaderTop from "../../../components/HeaderTop";
+import MainHeader from "../../../components/MainHeader/MainHeader";
 import HeroSlider from "../../../components/HeroSlider";
 import Service from "../../../components/Service";
 import About from "../../../components/About";
@@ -95,8 +94,7 @@ const HomePageOne = () => {
     <Fragment>
       <ContactNotification />
       <header className="headerArea">
-        <HeaderTop className="headerTop" />
-        <HeaderBotton className="headerBottomArea" />
+        <MainHeader className="headerTop" />
       </header>
       <HeroSlider sliders={heroSliders} className="heroSliderArea" />
       <Service className="serviceArea" />

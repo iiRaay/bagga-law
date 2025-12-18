@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import HeaderBotton from '../../../components/HeaderBottom'
-import HeaderTop from '../../../components/HeaderTop'
+
+import MainHeader from '../../../components/MainHeader/MainHeader'
 import Breadcumb from '../../../components/Breadcumb'
 import NewsLetter from '../../../components/Newsletter'
 import CetagorySidebar from '../../../components/CetagorySidebar'
@@ -36,8 +36,7 @@ const SinglePortfolioPage = () => {
     return (
         <Fragment>
             <header className="headerArea">
-                <HeaderTop className="headerTop" />
-                <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
+                <MainHeader className="headerTop" />
             </header>
             <Breadcumb
                 className="breadcumbArea"

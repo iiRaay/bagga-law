@@ -1,6 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react'
-// HeaderBottom content moved into MainHeader — render only MainHeader now
-import MainHeader from '../../../components/MainHeader/MainHeader'
+
 import Breadcumb from '../../../components/Breadcumb'
 import FooterArea from '../../../components/FooterArea'
 import breadcumb from '../../../images/slider/UpdatedBanner-6-13-2025.jpg'
@@ -18,7 +17,7 @@ const apiEndpoint = "https://api.canlii.org/en/v1/cases/";
 const languageOption = "en";
 
 
-const CasesPage = () => {
+const FAQPage = () => {
     const [selectedYear, setSelectedYear] = useState(new Date().getFullYear())
     const [listOfYears, setListOfYears] = useState(null);
     const [caseData, setCaseData] = useState(null);
@@ -100,4 +99,4 @@ const CasesPage = () => {
         </Fragment>
     )
 }
-export default CasesPage
+export default FAQPage

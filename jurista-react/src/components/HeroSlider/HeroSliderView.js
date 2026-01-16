@@ -29,9 +29,14 @@ class HeroSlider extends Component {
                             <div className="container">
                                 <div className="row">
                                     <div className="col col-lg-8">
+                                        <div className="sliderTitle">
                                         <h2><span>{slider.title}</span></h2>
-                                        <h3><span>{slider.subTitle}</span></h3>
-                                        <p>{slider.text}</p>
+
+                                        </div>
+                                        <div className="sliderSubTitle">
+                                        <h2><span>{slider.subTitle}</span></h2>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>

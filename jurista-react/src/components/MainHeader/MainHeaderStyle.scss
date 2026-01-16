@@ -1,3 +1,4 @@
+@import '../../css/colors.scss';
 .headerArea {
     .headerTop {
         .headerTopMainWrapper {
@@ -43,7 +44,7 @@
 
                 i {
                     padding-right: 10px;
-                    color: #cbbc99;
+                    color: color(blgold);
 
                 }
             }
@@ -83,7 +84,7 @@
                 font-weight: 700;
                 color: #fff;
                 padding: 9px 15px;
-                border: 2px solid #c0b596;
+                border: 2px solid color(blgold);
                 border-radius: 47px;
                 text-transform: capitalize;
 

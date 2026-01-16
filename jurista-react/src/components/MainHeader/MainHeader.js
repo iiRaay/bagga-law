@@ -52,7 +52,7 @@ const MainHeader = props => {
                                     <li><NavLink to="/attorneys">Our Team</NavLink></li>
                                     <li>
                                         {/* <NavLink to="/practice">Expertise</NavLink> Currently this page is dead, routing to home for the time being*/}
-                                        <NavLink to="/">Expertise</NavLink>
+                                        <NavLink to="/practice-details/1">Expertise</NavLink>
                                         <ul className="subMenu">
                                             <li><NavLink to='/practice-details/1'>Criminal Law</NavLink></li>
                                             <li><NavLink to='/practice-details/2'>Personal Injury</NavLink></li>
@@ -64,7 +64,7 @@ const MainHeader = props => {
                                     </li>
                                     <li>
                                         {/* <NavLink to="/case-studies">Client Resources</NavLink>  Currently this page is dead, routing to home for the time being*/}
-                                        <NavLink to="/">Client Resources</NavLink>
+                                        <NavLink to="/frequently-asked">Client Resources</NavLink>
                                         <ul className="subMenu">
                                              <li><NavLink to='/frequently-asked'>FAQ</NavLink></li>
                                              <li><NavLink to='/cases'>Cases</NavLink></li>

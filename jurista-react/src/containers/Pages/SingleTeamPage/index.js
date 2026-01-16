@@ -5,7 +5,7 @@ import Breadcumb from '../../../components/Breadcumb'
 import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
 import Portfolio from '../../../components/Portfolio'
-import ContactArea from '../../../components/ContactArea'
+import ContactArea from '../../../components/ContactArea/ContactAreaView'
 
 // images
 // import breadcumb from '../../../images/breadcumb/1.jpg'

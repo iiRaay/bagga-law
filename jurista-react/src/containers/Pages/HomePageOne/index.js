@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import MainHeader from "../../../components/MainHeader/MainHeader";
-import HeroSlider from "../../../components/HeroSlider";
+import HeroSliderView from "../../../components/HeroSlider/HeroSliderView";
 import Service from "../../../components/Service";
 import About from "../../../components/About";
 import ServiceArea from "../../../components/ServiceArea";
 import Portfolio from "../../../components/Portfolio";
 import Testmonial from "../../../components/Testmonial";
-import ContactArea from "../../../components/ContactArea";
+import ContactArea from "../../../components/ContactArea/ContactAreaView";
 import TeamMember from "../../../components/TeamMember";
 import FooterArea from "../../../components/FooterArea";
 import Map from "../../../components/Map";
@@ -22,6 +22,9 @@ import portfolio4 from "../../../images/studies/4.jpg";
 import portfolio5 from "../../../images/studies/5.jpg";
 import ContactNotification from "../../../components/ContactNotification/ContactNotfication";
 import services from "../../../constants/services";
+import ConsultationForm from "../../../components/ConsultationForm/ConsultationFormView";
+import './style.scss'
+
 
 const aboutText = [
   {
@@ -63,18 +66,10 @@ const aboutText = [
 const heroSliders = [
   {
     images: "slideWrapperOne",
-    title: "We Fight For Your Justice",
-    subTitle: "As Like A Friend.",
-    text: "The Most Talented Law Firm",
+    title: "Bagga & Associates",
+    subTitle: "We Carry The Complexity of Court So You Don't Have To",
     button: "Contact us now",
   },
-  // {
-  //     images: 'slideWrapperTwo',
-  //     title: 'We Fight For Your Justice',
-  //     subTitle: 'As Like A Friend.',
-  //     text: 'The Most Talented Law Firm',
-  //     button: 'Contact us now'
-  // },
 ];
 
 const portfolioItem = [
@@ -94,9 +89,17 @@ const HomePageOne = () => {
     <Fragment>
       <ContactNotification />
       <header className="headerArea">
+     
         <MainHeader className="headerTop" />
-      </header>
-      <HeroSlider sliders={heroSliders} className="heroSliderArea" />
+   
+        <div className="heroFormWrapper">
+          <HeroSliderView sliders={heroSliders} className="heroSliderArea" />
+          <div className="heroForm">
+            <ConsultationForm />
+          </div>
+      </div>
+   
+    </header>
       <Service className="serviceArea" />
       <About
         className="aboutArea"

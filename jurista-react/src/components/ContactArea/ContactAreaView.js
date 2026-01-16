@@ -1,6 +1,6 @@
 import React from 'react'
 import Form from '../Form'
-import './style.scss'
+import './ContactAreaStyle.scss'
 const ContactArea = ({ className }) => {
     return (
         <div className={className}>

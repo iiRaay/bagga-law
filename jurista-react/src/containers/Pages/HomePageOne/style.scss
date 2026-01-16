@@ -1,0 +1,28 @@
+.heroFormWrapper {
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+}
+
+.heroForm {
+  position: absolute;
+  top: 50%;
+  right: 4vw;
+  transform: translateY(-50%);
+  z-index: 10;
+  margin-right: 4rem;
+}
+
+// @media (max-width: 900px) {
+//   .heroFormWrapper {
+//     flex-direction: column;
+//     align-items: stretch;
+//     min-height: unset;
+//   }
+//   .heroForm {
+//     position: static;
+//     transform: none;
+//     margin-top: 2rem;
+//     right: auto;
+//   }
+// }

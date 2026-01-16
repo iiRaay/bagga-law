@@ -24,6 +24,7 @@ import services from "../../../constants/services";
 import ConsultationForm from "../../../components/ConsultationForm/ConsultationFormView";
 import './style.scss'
 import MissionStatement from "../../../components/MissionStatement/MissionStatementView";
+import OurPartnersView from "../../../components/OurPartners/OurPartnersView";
 
 
 const aboutText = [
@@ -113,7 +114,8 @@ const HomePageOne = () => {
         subTitle="Our Expertise"
         services={services}
       />
-      <Portfolio
+      <OurPartnersView/>
+      {/* <Portfolio
         className="portfolioArea"
         title="Recent Decisions"
         subTitle="Here Our Best Work"
@@ -126,7 +128,7 @@ const HomePageOne = () => {
         subTitle="Meet Our Experts"
         className="teamArea"
         slider={true}
-      />
+      /> */}
       <Map />
 
       <FooterArea />

@@ -1,12 +1,10 @@
-import React, { useState, Fragment } from 'react'
+import { useState } from 'react'
 import './MainHeaderStyle.scss'
-import logo from '../../images/logo/ba-logo-full-side.png'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const MainHeader = props => {
 
     const [responsive, setResponsive] = useState(false)
-    const [trigger, setTrigger] = useState(false)
     const responsiveHandler = () => {
         setResponsive(!responsive)
     }
@@ -28,7 +26,7 @@ const MainHeader = props => {
                             </div>
                             <div className="col-lg-2 col-md-3 col-sm-12">
                                 <div className="btnStyle btnStyle2 text-right">
-                                    <a href="#">Free Consultation 24/7</a>
+                                    <a href="/">Free Consultation 24/7</a>
                                 </div>
                             </div>
                         </div>

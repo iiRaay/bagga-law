@@ -4,7 +4,10 @@ $colors: (
   blprimary: #aab9f3,
   blaltblue: #c2cefb,
   blgold: #967D3C,
-  bltextbox:#fefefe
+  bltextbox:#fefefe,
+  blaltgold: #f3e5b0,
+  black: #000000,
+  blbackground: #ffffe4
 );
 
 @function color($key) {

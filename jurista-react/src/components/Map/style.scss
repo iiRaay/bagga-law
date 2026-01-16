@@ -1,3 +1,22 @@
+@import '../../css/colors.scss';
+.mapTitle {
+   
+    font-size: 32px;
+    color: color(blgold);
+    padding: 15px;
+    background-color: color(blbackground);
+    h2 {
+       text-align: center !important;
+        margin: 0 auto;
+        // Remove display: inline-block; and width: 100%;
+    }
+
+        .sectionTitle {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
 .container-fluid {
     padding-left: 0;
     padding-right: 0;

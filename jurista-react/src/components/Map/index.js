@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
-import "../../style.scss";
+import "./style.scss";
+import SectionTitle from "../Title";
 
 const containerStyle = {
   width: "100%",
@@ -21,11 +22,18 @@ const Map = ({ className = "", fullWidth = true }) => {
   if (!isLoaded) return <div>Loading Map...</div>;
 
   return (
-    <div className={`${className} ${fullWidth ? "w-100" : ""}`}>
-      <div className="container-fluid px-0">
-        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>
-          <Marker position={center} />
-        </GoogleMap>
+    <div className="mapContainer">
+    
+      <div className={`${className} ${fullWidth ? "w-100" : ""}`}>
+         
+        <div className="container-fluid px-0">
+             <div className="mapTitle">
+          <SectionTitle title="Our Office" subTitle="" />
+        </div>
+          <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>
+            <Marker position={center} />
+          </GoogleMap>
+        </div>
       </div>
     </div>
   );

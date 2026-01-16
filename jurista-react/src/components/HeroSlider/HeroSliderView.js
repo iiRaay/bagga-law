@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import './style.scss'
+import './HeroSliderStyle.scss'
 
 class HeroSlider extends Component {
     render() {
@@ -29,11 +29,9 @@ class HeroSlider extends Component {
                             <div className="container">
                                 <div className="row">
                                     <div className="col col-lg-8">
+                                        <h2><span>{slider.title}</span></h2>
+                                        <h3><span>{slider.subTitle}</span></h3>
                                         <p>{slider.text}</p>
-                                        <h2><span>{slider.title}</span> <span>{slider.subTitle}</span></h2>
-                                        <div className="btnStyle btnStyle3">
-                                            <a href="#">{slider.button}</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

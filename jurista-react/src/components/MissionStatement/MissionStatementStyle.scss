@@ -1,6 +1,9 @@
-.aboutArea{
-    padding: 120px 0px 100px;
-    .aboutImageWrap{
+@import '../../css/colors.scss';
+
+.missionStatementArea{
+    padding: 0px 0px 100px;
+    background-color: color(blbackground);
+    .statementImageWrap{
         margin: 0px 20px 0px 20px;
         position: relative;
         z-index: 1;
@@ -15,12 +18,12 @@
         }
         &::before{
             content: "";
-            background-color: #c0b596;
+            background-color: color(blgold);
             width: 100%;
             height: 100%;
             position: absolute;
-            left: -20px;
-            top: -20px;
+            left: -10px;
+            top: -10px;
             z-index: -1;
         }
         i{
@@ -43,7 +46,44 @@
             }
         }
     }
-    .aboutContent{
+
+
+    .statementTitle{
+        text-align: center;
+        margin-bottom: 40px;
+        
+        p{
+            font-size: 16px;
+            color: color(blgold);
+            margin: 0;
+        }
+         h2 {
+            font-size: 36px;
+            color: #1a1a1a;
+            position: relative; // Needed for the underline
+            display: inline-block; // So underline matches text width
+
+            &::after {
+                content: "";
+                display: block;
+                margin: 16px auto 0 auto;
+                width: 80px;
+                height: 3px;
+                background: color(blgold); // gold color
+                border-radius: 3px;
+            }
+
+            @media (max-width:768px) {
+                font-size: 28px;
+                &::after {
+                    width: 50px;
+                    height: 3px;
+                }
+            }
+        }
+    }
+
+    .statementContent{
         span{
             font-size: 16px;
             color: #ada282;

@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const areas = [
   {
     name: "Criminal Law",
-    image: require("../../images/Attorneys-single/rob.jpg"),
+    image: require("../../images/Attorneys-single/rohan.jpg"),
     icon: require("../../images/areas-of-law/Criminal_Law4.png"),
     link: "/practice-details/1",
   },
@@ -30,13 +30,13 @@ const areas = [
   },
   {
     name: "Real Estate Law",
-    image: require("../../images/Attorneys-single/DSC09654_2.jpg"),
+    image: require("../../images/contact/Contact_us_pic.png"),
     icon: require("../../images/areas-of-law/Realestate_Law.png"),
     link: "/practice-details/5",
   },
   {
     name: "Business Law",
-    image: require("../../images/Attorneys-single/rohan.jpg"),
+    image: require("../../images/Attorneys-single/rob.jpg"),
     icon: require("../../images/areas-of-law/Business_Law.png"),
     link: "/practice-details/6",
   },

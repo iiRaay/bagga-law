@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import './ConsultationFormStyle.scss'
 export default function ConsultationForm() {
   return (
@@ -21,13 +20,13 @@ export default function ConsultationForm() {
 
         <div className="consultFormInput">
           <select defaultValue="" required>
-            <option value="" disabled>Select Area of Law</option>
-            <option value="criminal">Criminal Law</option>
-            <option value="personal-injury">Personal Injury</option>
-            <option value="family">Family Law</option>
-            <option value="immigration">Immigration Law</option>
-            <option value="real-estate">Real Estate Law</option>
-            <option value="business">Business Law</option>
+            <option value="" disabled>{"Select Area of Law"}</option>
+            <option value="criminal">{"Criminal Law"}</option>
+            <option value="personal-injury">{"Personal Injury"}</option>
+            <option value="family">{"Family Law"}</option>
+            <option value="immigration">{"Immigration Law"}</option>
+            <option value="real-estate">{"Real Estate Law"}</option>
+            <option value="business">{"Business Law"}</option>
         </select>
         </div>
 

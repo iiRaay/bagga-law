@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import MainHeader from "../../../components/MainHeader/MainHeader";
 import HeroSliderView from "../../../components/HeroSlider/HeroSliderView";
 import Service from "../../../components/Service";
-import About from "../../../components/About";
 import ServiceArea from "../../../components/ServiceArea";
 import Portfolio from "../../../components/Portfolio";
 import Testmonial from "../../../components/Testmonial";
@@ -11,7 +10,7 @@ import TeamMember from "../../../components/TeamMember";
 import FooterArea from "../../../components/FooterArea";
 import Map from "../../../components/Map";
 // images
-import about from "../../../images/about/black_scale.jpg";
+import about from "../../../images/Attorneys-single/rob.jpg";
 import signature from "../../../images/about/1.png";
 
 // images
@@ -24,6 +23,7 @@ import ContactNotification from "../../../components/ContactNotification/Contact
 import services from "../../../constants/services";
 import ConsultationForm from "../../../components/ConsultationForm/ConsultationFormView";
 import './style.scss'
+import MissionStatement from "../../../components/MissionStatement/MissionStatementView";
 
 
 const aboutText = [
@@ -100,18 +100,17 @@ const HomePageOne = () => {
       </div>
    
     </header>
-      <Service className="serviceArea" />
-      <About
-        className="aboutArea"
-        title="About Us"
+      {/* <Service className="serviceArea" /> */}
+      <MissionStatement
+        title="Robert Bagga"
         images={about}
         signature={signature}
         pragraphs={aboutText}
       />
       <ServiceArea
         className="ourServiceArea"
-        title="How Can We Help You"
-        subTitle="Area Of Practice"
+        title="Areas of Law"
+        subTitle="Our Expertise"
         services={services}
       />
       <Portfolio

@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import MainHeader from "../../../components/MainHeader/MainHeader";
 import Breadcumb from "../../../components/Breadcumb";
 import Service from "../../../components/Service";
-import About from "../../../components/About";
+import MissionStatement from "../../../components/MissionStatement/MissionStatementView";
 import ServiceArea from "../../../components/ServiceArea";
 import Testmonial from "../../../components/Testmonial";
 import TeamMember from "../../../components/TeamMember";
@@ -31,7 +31,7 @@ const AboutPageView = () => {
         background={breadcumb}
       />
       <Service className="serviceArea mt-0" />
-      <About
+      <MissionStatement
         className="aboutArea aboutAreaStyleTwo"
         title="About us"
         subTitle="Who we are"

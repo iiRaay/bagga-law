@@ -32,7 +32,7 @@ const MissionStatement = ({ subTitle, title, videoId, className, signature, prag
                                 <p key={i}>{pragraph.text}</p>
                             ))}
                             <div className="btnStyle">
-                                <Link to='/about'>More About Us..</Link>
+                                <Link to='/attorneys'>More About Us..</Link>
                             </div>
                             {signature && <div className="signature">
                                 <img src={signature} alt="" />

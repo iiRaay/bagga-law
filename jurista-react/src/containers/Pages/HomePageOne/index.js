@@ -25,6 +25,7 @@ import ConsultationForm from "../../../components/ConsultationForm/ConsultationF
 import './style.scss'
 import MissionStatement from "../../../components/MissionStatement/MissionStatementView";
 import OurPartnersView from "../../../components/OurPartners/OurPartnersView";
+import AreasOfLawView from "../../../components/AreasOfLaw/AreasOfLawView";
 
 
 const aboutText = [
@@ -108,13 +109,14 @@ const HomePageOne = () => {
         signature={signature}
         pragraphs={aboutText}
       />
-      <ServiceArea
+      <AreasOfLawView/>
+      <OurPartnersView/>
+      {/* <ServiceArea
         className="ourServiceArea"
         title="Areas of Law"
         subTitle="Our Expertise"
         services={services}
-      />
-      <OurPartnersView/>
+      /> */}
       {/* <Portfolio
         className="portfolioArea"
         title="Recent Decisions"

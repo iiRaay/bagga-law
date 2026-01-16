@@ -1,0 +1,123 @@
+@import '../../css/colors.scss';
+
+.areasOfLawGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+  padding: 2rem 0;
+}
+
+.areaCard {
+  background: color(bldark);
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.4s, transform 0.4s;
+}
+
+.areaCardInner {
+  background: color(bldark);
+  border: 3px solid color(blgold);
+  width: 214px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 12px 24px 12px;
+  box-sizing: border-box;
+  position: relative;
+  transition: box-shadow 0.4s, transform 0.4s;
+}
+
+.areaVisual {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.areaImage,
+.areaIcon {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  display: block;
+  border-radius: 1rem;
+  background: transparent;
+  transition:
+    opacity 0.5s cubic-bezier(.77,0,.18,1),
+    transform 0.5s cubic-bezier(.77,0,.18,1),
+    filter 0.5s cubic-bezier(.77,0,.18,1);
+}
+
+.areaIcon {
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  transform: scale(0.8) rotate(-8deg);
+}
+
+.areaCard:hover {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  transform: translateY(-6px) scale(1.03);
+}
+
+.areaCard:hover .areaImage {
+  opacity: 0 !important;
+  filter: blur(6px);
+  transform: scale(0.92);
+}
+
+.areaCard:hover .areaIcon {
+  opacity: 1 !important;
+  transform: scale(1.04);
+  filter: none;
+}
+
+.areaCard:hover .areaLabel {
+  background: color(blgold);
+  color: color(bldark);
+  box-shadow: 0 2px 12px rgba(192,181,150,0.18);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.areaLabel {
+  color: color(blgold);
+  background: transparent;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.areasOfLawSection {
+  width: 100%;
+}
+
+.areasOfLawHeader {
+    padding: 1rem;
+            .sectionTitle {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+.areaCardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
